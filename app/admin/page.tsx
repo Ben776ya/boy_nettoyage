@@ -1,9 +1,8 @@
 "use client";
 
-import { useState, useEffect } from "react";
-import { Download, RefreshCw, Lock, LogOut, FileText, Users, Building2, Check, Trash2, X, AlertTriangle } from "lucide-react";
+import { useState } from "react";
+import { Download, RefreshCw, Lock, LogOut, FileText, Users, Building2, Check, Trash2, AlertTriangle } from "lucide-react";
 
-const ADMIN_PASSWORD = "admin2024";
 
 interface CSVData {
   headers: string[];
@@ -28,9 +27,14 @@ export default function AdminPage() {
   const [deleteConfirm, setDeleteConfirm] = useState<DeleteConfirmation | null>(null);
   const [actionLoading, setActionLoading] = useState<string | null>(null);
 
-  const handleLogin = (e: React.FormEvent) => {
+  const handleLogin = async (e: React.SyntheticEvent) => {
     e.preventDefault();
-    if (password === ADMIN_PASSWORD) {
+    const res = await fetch("/api/admin/auth", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ password }),
+    });
+    if (res.ok) {
       setIsAuthenticated(true);
       setError("");
       loadData();
@@ -49,9 +53,10 @@ export default function AdminPage() {
   const loadData = async () => {
     setLoading(true);
     try {
+      const authHeaders = { "Authorization": `Bearer ${password}` };
       const [partRes, proRes] = await Promise.all([
-        fetch("/api/admin/csv?type=particuliers"),
-        fetch("/api/admin/csv?type=professionnels"),
+        fetch("/api/admin/csv?type=particuliers", { headers: authHeaders }),
+        fetch("/api/admin/csv?type=professionnels", { headers: authHeaders }),
       ]);
 
       if (partRes.ok) {
@@ -79,7 +84,7 @@ export default function AdminPage() {
         `/api/admin/reservation?type=${type}&date_soumission=${encodeURIComponent(dateSubmission)}`,
         {
           method: "PATCH",
-          headers: { "Content-Type": "application/json" },
+          headers: { "Content-Type": "application/json", "Authorization": `Bearer ${password}` },
           body: JSON.stringify({ status: newStatus }),
         }
       );
@@ -102,7 +107,7 @@ export default function AdminPage() {
     try {
       const res = await fetch(
         `/api/admin/reservation?type=${deleteConfirm.type}&date_soumission=${encodeURIComponent(deleteConfirm.dateSubmission)}`,
-        { method: "DELETE" }
+        { method: "DELETE", headers: { "Authorization": `Bearer ${password}` } }
       );
 
       if (res.ok) {

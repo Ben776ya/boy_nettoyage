@@ -1,70 +1,50 @@
 import { NextRequest, NextResponse } from "next/server";
-import { promises as fs } from "fs";
-import path from "path";
+import { supabase } from "@/lib/supabase";
+import { isAdminAuthorized } from "@/lib/adminAuth";
+
+const COLUMNS: Record<string, string[]> = {
+  particuliers: [
+    "date_soumission", "nom_complet", "telephone", "email",
+    "service", "date_souhaitee", "message", "status",
+  ],
+  professionnels: [
+    "date_soumission", "responsable", "entreprise", "ice", "adresse",
+    "telephone", "email", "service", "frequence", "date_souhaitee", "message", "status",
+  ],
+};
 
 export async function GET(request: NextRequest) {
+  if (!isAdminAuthorized(request)) {
+    return NextResponse.json({ error: "Non autorisé" }, { status: 401 });
+  }
+
   try {
     const { searchParams } = new URL(request.url);
     const type = searchParams.get("type");
 
     if (!type || !["particuliers", "professionnels"].includes(type)) {
-      return NextResponse.json(
-        { error: "Type invalide" },
-        { status: 400 }
-      );
+      return NextResponse.json({ error: "Type invalide" }, { status: 400 });
     }
 
-    const dataDir = path.join(process.cwd(), "data");
-    const filePath = path.join(dataDir, `reservations_${type}.csv`);
+    const columns = COLUMNS[type];
 
-    try {
-      const content = await fs.readFile(filePath, "utf-8");
-      const lines = content.trim().split("\n");
+    const { data, error } = await supabase
+      .from(`reservations_${type}`)
+      .select(columns.join(","))
+      .order("date_soumission", { ascending: false });
 
-      if (lines.length === 0) {
-        return NextResponse.json({ headers: [], rows: [] });
-      }
+    if (error) throw error;
 
-      const headers = parseCSVLine(lines[0]);
-      const rows = lines.slice(1).map((line) => parseCSVLine(line));
+    const rows = (data || []).map((row) =>
+      columns.map((col) => ((row as unknown as Record<string, unknown>)[col] as string) ?? "")
+    );
 
-      return NextResponse.json({ headers, rows });
-    } catch (err) {
-      // File doesn't exist yet
-      return NextResponse.json({ headers: [], rows: [] });
-    }
+    return NextResponse.json({ headers: columns, rows });
   } catch (error) {
-    console.error("Error reading CSV:", error);
+    console.error("Error reading data:", error);
     return NextResponse.json(
       { error: "Erreur lors de la lecture des données" },
       { status: 500 }
     );
   }
-}
-
-function parseCSVLine(line: string): string[] {
-  const result: string[] = [];
-  let current = "";
-  let inQuotes = false;
-
-  for (let i = 0; i < line.length; i++) {
-    const char = line[i];
-
-    if (char === '"') {
-      if (inQuotes && line[i + 1] === '"') {
-        current += '"';
-        i++;
-      } else {
-        inQuotes = !inQuotes;
-      }
-    } else if (char === "," && !inQuotes) {
-      result.push(current);
-      current = "";
-    } else {
-      current += char;
-    }
-  }
-
-  result.push(current);
-  return result;
 }
