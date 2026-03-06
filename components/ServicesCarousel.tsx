@@ -10,7 +10,19 @@ import ScrollReveal from "./ScrollReveal";
 export default function ServicesCarousel() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isAutoPlaying, setIsAutoPlaying] = useState(true);
-  const itemsPerPage = 3;
+  const [itemsPerPage, setItemsPerPage] = useState(3);
+
+  useEffect(() => {
+    const update = () => {
+      const mobile = window.innerWidth < 768;
+      setItemsPerPage(mobile ? 1 : 3);
+      setCurrentIndex(0);
+    };
+    update();
+    window.addEventListener("resize", update);
+    return () => window.removeEventListener("resize", update);
+  }, []);
+
   const totalPages = Math.ceil(FEATURED_SERVICES.length / itemsPerPage);
 
   const nextSlide = useCallback(() => {
@@ -69,17 +81,17 @@ export default function ServicesCarousel() {
           {/* Navigation Arrows */}
           <button
             onClick={prevSlide}
-            className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 lg:-translate-x-12 z-10 w-12 h-12 rounded-full bg-white shadow-lg border border-border flex items-center justify-center text-primary-navy hover:bg-primary-teal hover:text-white transition-all duration-300 cursor-pointer"
+            className="absolute left-0 top-1/2 -translate-y-1/2 sm:-translate-x-4 lg:-translate-x-12 z-10 w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-white shadow-lg border border-border hidden sm:flex items-center justify-center text-primary-navy hover:bg-primary-teal hover:text-white transition-all duration-300 cursor-pointer"
             aria-label="Previous services"
           >
-            <ChevronLeft className="w-6 h-6" />
+            <ChevronLeft className="w-5 h-5 sm:w-6 sm:h-6" />
           </button>
           <button
             onClick={nextSlide}
-            className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 lg:translate-x-12 z-10 w-12 h-12 rounded-full bg-white shadow-lg border border-border flex items-center justify-center text-primary-navy hover:bg-primary-teal hover:text-white transition-all duration-300 cursor-pointer"
+            className="absolute right-0 top-1/2 -translate-y-1/2 sm:translate-x-4 lg:translate-x-12 z-10 w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-white shadow-lg border border-border hidden sm:flex items-center justify-center text-primary-navy hover:bg-primary-teal hover:text-white transition-all duration-300 cursor-pointer"
             aria-label="Next services"
           >
-            <ChevronRight className="w-6 h-6" />
+            <ChevronRight className="w-5 h-5 sm:w-6 sm:h-6" />
           </button>
 
           {/* Services Grid */}
@@ -151,10 +163,10 @@ export default function ServicesCarousel() {
               <button
                 key={index}
                 onClick={() => goToSlide(index)}
-                className={`w-3 h-3 rounded-full transition-all duration-300 cursor-pointer ${
+                className={`h-3 rounded-full transition-all duration-300 cursor-pointer min-w-[12px] touch-manipulation ${
                   index === currentIndex
                     ? "bg-primary-teal w-8"
-                    : "bg-gray-300 hover:bg-gray-400"
+                    : "bg-gray-300 hover:bg-gray-400 w-3"
                 }`}
                 aria-label={`Go to page ${index + 1}`}
               />

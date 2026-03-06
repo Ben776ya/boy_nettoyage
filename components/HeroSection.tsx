@@ -162,7 +162,7 @@ export default function HeroSection() {
               </div>
 
               {/* Trust badge */}
-              <div className="absolute -bottom-6 -right-6 w-24 h-24 bg-gradient-to-br from-green-cta to-emerald-600 rounded-2xl shadow-xl flex items-center justify-center rotate-12 hover:rotate-0 transition-transform duration-300">
+              <div className="absolute -bottom-6 -right-6 w-24 h-24 bg-gradient-to-br from-green-cta to-emerald-600 rounded-2xl shadow-xl hidden sm:flex items-center justify-center rotate-12 hover:rotate-0 transition-transform duration-300">
                 <div className="text-center text-white -rotate-12 hover:rotate-0 transition-transform duration-300">
                   <span className="text-2xl font-bold">100%</span>
                   <p className="text-[10px] uppercase tracking-wider">Satisfaction</p>

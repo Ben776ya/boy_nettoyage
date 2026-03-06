@@ -9,7 +9,8 @@ export default function WhatsAppButton() {
       href={WHATSAPP_URL}
       target="_blank"
       rel="noopener noreferrer"
-      className="fixed bottom-6 right-6 z-[9999] group"
+      className="fixed right-6 z-[9999] group"
+      style={{ bottom: "calc(1.5rem + env(safe-area-inset-bottom, 0px))" }}
       aria-label="Contactez-nous sur WhatsApp"
     >
       {/* Ripple effect */}
