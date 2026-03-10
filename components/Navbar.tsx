@@ -8,13 +8,26 @@ import { cn, PHONE_NUMBER, PHONE_MAIN } from "@/lib/utils";
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isHidden, setIsHidden] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   useEffect(() => {
+    let lastY = window.scrollY;
+
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 50);
+      const currentY = window.scrollY;
+      setIsScrolled(currentY > 50);
+      // Hide when scrolling down past 100px, show when scrolling up
+      if (currentY > lastY && currentY > 100) {
+        setIsHidden(true);
+        setIsMobileMenuOpen(false);
+      } else {
+        setIsHidden(false);
+      }
+      lastY = currentY;
     };
-    window.addEventListener("scroll", handleScroll);
+
+    window.addEventListener("scroll", handleScroll, { passive: true });
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
@@ -31,7 +44,8 @@ export default function Navbar() {
         "fixed top-0 left-0 right-0 z-50 transition-all duration-500",
         isScrolled
           ? "glass shadow-lg shadow-primary-navy/5 py-2"
-          : "bg-transparent py-4"
+          : "bg-transparent py-4",
+        isHidden ? "-translate-y-full" : "translate-y-0"
       )}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

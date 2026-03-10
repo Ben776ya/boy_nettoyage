@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, Check, Sparkles, ChevronRight, Home } from "lucide-react";
-import { ALL_SERVICES } from "@/lib/services-data";
+import { SERVICES_DETAIL } from "@/lib/services-detail-data";
 import ScrollReveal from "./ScrollReveal";
 
 export default function ServicesPageContent() {
@@ -39,7 +39,7 @@ export default function ServicesPageContent() {
 
               {/* Subtitle */}
               <p className="text-white/80 text-lg md:text-xl max-w-2xl mx-auto">
-                19 services de nettoyage professionnel pour répondre à tous vos besoins
+                25 services de nettoyage professionnel pour répondre à tous vos besoins
               </p>
             </div>
           </ScrollReveal>
@@ -47,7 +47,7 @@ export default function ServicesPageContent() {
       </section>
 
       {/* Services Grid */}
-      <section className="relative py-20 md:py-28 overflow-hidden">
+      <section className="relative py-14 md:py-28 overflow-hidden">
         {/* Background */}
         <div className="absolute inset-0 bg-gradient-to-b from-white via-light-bg to-white"></div>
         <div className="absolute top-0 left-1/4 w-96 h-96 bg-primary-teal/5 rounded-full blur-3xl"></div>
@@ -74,8 +74,8 @@ export default function ServicesPageContent() {
 
           {/* Services Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
-            {ALL_SERVICES.map((service, index) => (
-              <ScrollReveal key={service.id} delay={(index % 3) * 100}>
+            {SERVICES_DETAIL.map((service, index) => (
+              <ScrollReveal key={service.slug} delay={(index % 3) * 100}>
                 <div className="group bg-white rounded-3xl overflow-hidden border border-border/50 shadow-lg shadow-primary-navy/5 hover:shadow-2xl hover:shadow-primary-navy/10 transition-all duration-500 h-full flex flex-col card-hover">
                   {/* Image */}
                   <div className="relative h-48 overflow-hidden">
@@ -85,12 +85,12 @@ export default function ServicesPageContent() {
                       fill
                       className="object-cover group-hover:scale-110 transition-transform duration-700"
                     />
-                    <div className={`absolute inset-0 bg-gradient-to-t ${service.color} opacity-60 mix-blend-multiply`}></div>
+                    <div className="absolute inset-0 bg-gradient-to-t from-[#064e3b]/70 to-[#0D7377]/30 opacity-70 mix-blend-multiply"></div>
                     <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
 
                     {/* Icon Badge */}
-                    <div className={`absolute top-4 left-4 w-12 h-12 rounded-2xl ${service.bgColor} backdrop-blur-sm flex items-center justify-center`}>
-                      <service.icon className={`w-6 h-6 ${service.textColor}`} />
+                    <div className="absolute top-4 left-4 w-12 h-12 rounded-2xl bg-white/15 backdrop-blur-sm flex items-center justify-center">
+                      <service.icon className="w-6 h-6 text-white" />
                     </div>
 
                     {/* Title on image */}
@@ -107,26 +107,26 @@ export default function ServicesPageContent() {
                       {service.description}
                     </p>
 
-                    {/* Bullets */}
+                    {/* Prestations preview */}
                     <ul className="space-y-2 mb-6 flex-grow">
-                      {service.bullets.map((bullet) => (
-                        <li key={bullet} className="flex items-center gap-2 text-sm">
-                          <div className={`w-5 h-5 rounded-full ${service.bgColor} flex items-center justify-center flex-shrink-0`}>
-                            <Check className={`w-3 h-3 ${service.textColor}`} />
+                      {service.prestations.slice(0, 3).map((item) => (
+                        <li key={item} className="flex items-center gap-2 text-sm">
+                          <div className="w-5 h-5 rounded-full bg-[#0D7377]/10 flex items-center justify-center flex-shrink-0">
+                            <Check className="w-3 h-3 text-[#0D7377]" />
                           </div>
-                          <span className="text-text-gray">{bullet}</span>
+                          <span className="text-text-gray">{item}</span>
                         </li>
                       ))}
                     </ul>
 
                     {/* CTA Button */}
-                    <a
-                      href="/#devis"
-                      className={`group/btn w-full py-3 rounded-xl bg-gradient-to-r ${service.color} text-white text-sm font-semibold shadow-lg hover:shadow-xl transition-all duration-300 flex items-center justify-center gap-2 btn-shine cursor-pointer`}
+                    <Link
+                      href={`/services/${service.slug}`}
+                      className="group/btn w-full py-3 rounded-xl bg-gradient-to-r from-[#064e3b] to-[#0D7377] text-white text-sm font-semibold shadow-lg hover:shadow-xl transition-all duration-300 flex items-center justify-center gap-2"
                     >
-                      Demander un devis
+                      Voir le service
                       <ArrowRight className="w-4 h-4 group-hover/btn:translate-x-1 transition-transform" />
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </ScrollReveal>

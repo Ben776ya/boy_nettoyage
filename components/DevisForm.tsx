@@ -1,7 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import Image from "next/image";
 import {
   User,
   Phone,
@@ -153,8 +152,8 @@ export default function DevisForm() {
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
-          {/* Left Column - Marketing */}
-          <ScrollReveal>
+          {/* Left Column - Marketing (desktop only — on mobile the form is shown directly) */}
+          <ScrollReveal className="hidden lg:block">
             <div>
               <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gradient-to-r from-green-100 to-emerald-100 text-green-700 text-sm font-semibold mb-6">
                 <span className="relative flex h-2 w-2">
