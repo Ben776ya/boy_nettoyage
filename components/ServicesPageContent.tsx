@@ -10,36 +10,40 @@ export default function ServicesPageContent() {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative pt-24 pb-16 md:pt-32 md:pb-20 overflow-hidden">
-        {/* Background */}
-        <div className="absolute inset-0 bg-gradient-to-br from-primary-navy via-[#1a3a5c] to-[#0f2840]"></div>
-        <div className="absolute inset-0 opacity-10">
-          <div className="absolute inset-0 bg-pattern-light"></div>
-        </div>
-        <div className="absolute top-1/4 right-0 w-[400px] h-[400px] bg-primary-teal/10 rounded-full blur-3xl"></div>
-        <div className="absolute bottom-0 left-0 w-[300px] h-[300px] bg-bright-blue/10 rounded-full blur-3xl"></div>
+      <section className="relative pt-28 pb-12 md:pt-36 md:pb-16 overflow-hidden bg-[#F7F9FC]">
+        {/* Soft background blobs */}
+        <div className="absolute top-0 left-0 w-[500px] h-[500px] bg-primary-teal/5 rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2"></div>
+        <div className="absolute top-1/2 right-0 w-[400px] h-[400px] bg-bright-blue/5 rounded-full blur-3xl translate-x-1/3"></div>
+        {/* Subtle bottom border */}
+        <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#E5E7EB] to-transparent"></div>
 
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <ScrollReveal>
             <div className="text-center">
               {/* Breadcrumb */}
-              <nav className="flex items-center justify-center gap-2 text-sm text-white/70 mb-6">
-                <Link href="/" className="flex items-center gap-1 hover:text-white transition-colors">
+              <nav className="flex items-center justify-center gap-2 text-sm text-[#6B7280] mb-6">
+                <Link href="/" className="flex items-center gap-1 hover:text-primary-teal transition-colors">
                   <Home className="w-4 h-4" />
                   Accueil
                 </Link>
                 <ChevronRight className="w-4 h-4" />
-                <span className="text-white font-medium">Nos Services</span>
+                <span className="text-primary-navy font-medium">Nos Services</span>
               </nav>
 
+              {/* Badge */}
+              <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary-teal/10 text-primary-teal text-sm font-semibold mb-5">
+                <Sparkles className="w-4 h-4" />
+                25 services professionnels
+              </div>
+
               {/* Title */}
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4">
+              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-primary-navy mb-4">
                 Nos Services
               </h1>
 
               {/* Subtitle */}
-              <p className="text-white/80 text-lg md:text-xl max-w-2xl mx-auto">
-                25 services de nettoyage professionnel pour répondre à tous vos besoins
+              <p className="text-[#6B7280] text-base sm:text-lg md:text-xl max-w-2xl mx-auto">
+                Particuliers ou professionnels, découvrez notre gamme complète de nettoyage et d&apos;hygiène partout au Maroc.
               </p>
             </div>
           </ScrollReveal>
@@ -54,24 +58,6 @@ export default function ServicesPageContent() {
         <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-bright-blue/5 rounded-full blur-3xl"></div>
 
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          {/* Section Header */}
-          <ScrollReveal>
-            <div className="text-center mb-16">
-              <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gradient-to-r from-primary-teal/10 to-bright-blue/10 text-primary-teal text-sm font-semibold mb-4">
-                <Sparkles className="w-4 h-4" />
-                Expertise Complète
-              </span>
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-primary-navy mb-4">
-                Une gamme complète de{" "}
-                <span className="gradient-text">services premium</span>
-              </h2>
-              <p className="text-text-gray text-lg max-w-2xl mx-auto">
-                Particuliers ou professionnels, découvrez notre gamme complète de services
-                de nettoyage et d&apos;hygiène à Casablanca et partout au Maroc.
-              </p>
-            </div>
-          </ScrollReveal>
-
           {/* Services Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
             {SERVICES_DETAIL.map((service, index) => (
