@@ -14,7 +14,6 @@ import {
   Mail,
 } from "lucide-react";
 import {
-  PHONE_NUMBER,
   PHONE_MAIN,
   PHONE_SECONDARY,
   PHONE_FIXED,
@@ -84,19 +83,43 @@ export default function B2BContactSection() {
                   <div className="group/item">
                     <p className="text-[10px] uppercase tracking-wider text-gray-400 mb-1.5 flex items-center gap-2">
                       <span className="w-1.5 h-1.5 rounded-full bg-whatsapp"></span>
-                      WhatsApp / Téléphone
+                      Téléphones
                     </p>
-                    <a
-                      href={WHATSAPP_URL}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="flex items-center gap-3 text-white hover:text-whatsapp transition-colors cursor-pointer"
-                    >
-                      <div className="w-8 h-8 rounded-lg bg-white/10 flex items-center justify-center group-hover/item:bg-whatsapp/20 transition-colors">
-                        <MessageCircle className="w-4 h-4" />
-                      </div>
-                      <span className="font-medium">{PHONE_MAIN}</span>
-                    </a>
+                    <div className="space-y-2">
+                      <a
+                        href="tel:0661408577"
+                        className="flex items-center gap-3 text-white hover:text-whatsapp transition-colors"
+                      >
+                        <div className="w-8 h-8 rounded-lg bg-white/10 flex items-center justify-center flex-shrink-0">
+                          <MessageCircle className="w-4 h-4" />
+                        </div>
+                        <div>
+                          <span className="font-medium">{PHONE_MAIN}</span>
+                          <span className="text-xs text-gray-400 ml-2">WhatsApp</span>
+                        </div>
+                      </a>
+                      <a
+                        href="tel:0661538507"
+                        className="flex items-center gap-3 text-white hover:text-primary-teal transition-colors"
+                      >
+                        <div className="w-8 h-8 rounded-lg bg-white/10 flex items-center justify-center flex-shrink-0">
+                          <Phone className="w-4 h-4" />
+                        </div>
+                        <span className="font-medium">{PHONE_SECONDARY}</span>
+                      </a>
+                      <a
+                        href="tel:0522980621"
+                        className="flex items-center gap-3 text-white hover:text-primary-teal transition-colors"
+                      >
+                        <div className="w-8 h-8 rounded-lg bg-white/10 flex items-center justify-center flex-shrink-0">
+                          <Phone className="w-4 h-4" />
+                        </div>
+                        <div>
+                          <span className="font-medium">{PHONE_FIXED}</span>
+                          <span className="text-xs text-gray-400 ml-2">Fixe</span>
+                        </div>
+                      </a>
+                    </div>
                   </div>
 
                   <div className="group/item">

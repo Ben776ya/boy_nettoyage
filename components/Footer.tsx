@@ -1,8 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
-import { Phone, MessageCircle, MapPin, ArrowUpRight, Clock, Mail } from "lucide-react";
+import { Phone, MessageCircle, MapPin, ArrowUpRight, Mail } from "lucide-react";
 import {
-  PHONE_NUMBER,
   PHONE_MAIN,
   PHONE_SECONDARY,
   PHONE_FIXED,
@@ -114,15 +113,43 @@ export default function Footer() {
             <ul className="space-y-4">
               <li>
                 <a
-                  href={`tel:${PHONE_NUMBER}`}
+                  href="tel:0661408577"
                   className="group flex items-center gap-3 text-sm text-gray-300 hover:text-white transition-colors"
                 >
-                  <div className="w-10 h-10 rounded-xl bg-white/10 flex items-center justify-center group-hover:bg-primary-teal/20 transition-colors">
+                  <div className="w-10 h-10 rounded-xl bg-white/10 flex items-center justify-center group-hover:bg-primary-teal/20 transition-colors flex-shrink-0">
                     <Phone className="w-4 h-4 text-primary-teal" />
                   </div>
                   <div>
                     <p className="font-medium text-white">{PHONE_MAIN}</p>
                     <p className="text-xs text-gray-400">Mobile / WhatsApp</p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="tel:0661538507"
+                  className="group flex items-center gap-3 text-sm text-gray-300 hover:text-white transition-colors"
+                >
+                  <div className="w-10 h-10 rounded-xl bg-white/10 flex items-center justify-center group-hover:bg-primary-teal/20 transition-colors flex-shrink-0">
+                    <Phone className="w-4 h-4 text-primary-teal" />
+                  </div>
+                  <div>
+                    <p className="font-medium text-white">{PHONE_SECONDARY}</p>
+                    <p className="text-xs text-gray-400">Mobile</p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="tel:0522980621"
+                  className="group flex items-center gap-3 text-sm text-gray-300 hover:text-white transition-colors"
+                >
+                  <div className="w-10 h-10 rounded-xl bg-white/10 flex items-center justify-center group-hover:bg-primary-teal/20 transition-colors flex-shrink-0">
+                    <Phone className="w-4 h-4 text-primary-teal" />
+                  </div>
+                  <div>
+                    <p className="font-medium text-white">{PHONE_FIXED}</p>
+                    <p className="text-xs text-gray-400">Fixe</p>
                   </div>
                 </a>
               </li>
