@@ -88,7 +88,7 @@ export const SERVICES_DETAIL: ServiceDetail[] = [
     ],
     icon: HardHat,
     image:
-      "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&h=500&fit=crop",
+      "/services/Nettoyage de chantier.png",
   },
   {
     slug: "nettoyage-airbnb",
@@ -132,7 +132,7 @@ export const SERVICES_DETAIL: ServiceDetail[] = [
     ],
     icon: Home,
     image:
-      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1527515637462-cff94eecc1ac?w=800&h=500&fit=crop",
   },
   {
     slug: "nettoyage-canape-fauteuil",
@@ -176,7 +176,7 @@ export const SERVICES_DETAIL: ServiceDetail[] = [
     ],
     icon: Armchair,
     image:
-      "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=800&h=500&fit=crop",
+      "/services/Nettoyage Canapé & Fauteuil.png",
   },
   {
     slug: "nettoyage-vitres-facades",
@@ -220,7 +220,7 @@ export const SERVICES_DETAIL: ServiceDetail[] = [
     ],
     icon: Building2,
     image:
-      "https://images.unsplash.com/photo-1486325212027-8081e485255e?w=800&h=500&fit=crop",
+      "/services/Nettoyage Vitres et Façades.png",
   },
   {
     slug: "nettoyage-industriel",
@@ -264,7 +264,7 @@ export const SERVICES_DETAIL: ServiceDetail[] = [
     ],
     icon: Factory,
     image:
-      "https://images.unsplash.com/photo-1565793298595-6a879b1d9492?w=800&h=500&fit=crop",
+      "/services/Nettoyage Industriel.png",
   },
   {
     slug: "nettoyage-bureaux",
@@ -308,7 +308,7 @@ export const SERVICES_DETAIL: ServiceDetail[] = [
     ],
     icon: Briefcase,
     image:
-      "https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&h=500&fit=crop",
+      "/services/Nettoyage Bureaux.png",
   },
   {
     slug: "cristallisation-marbre",
@@ -351,7 +351,7 @@ export const SERVICES_DETAIL: ServiceDetail[] = [
     ],
     icon: Gem,
     image:
-      "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&h=500&fit=crop",
+      "/services/Cristallisation du Marbre.jfif",
   },
   {
     slug: "cristallisation-parquet",
@@ -394,7 +394,7 @@ export const SERVICES_DETAIL: ServiceDetail[] = [
     ],
     icon: Layers,
     image:
-      "https://images.unsplash.com/photo-1560448204-603b3fc33ddc?w=800&h=500&fit=crop",
+      "/services/Cristallisation du Parquet.webp",
   },
   {
     slug: "nettoyage-hopitaux",
@@ -438,7 +438,7 @@ export const SERVICES_DETAIL: ServiceDetail[] = [
     ],
     icon: HeartPulse,
     image:
-      "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=800&h=500&fit=crop",
+      "/services/Nettoyage Hôpitaux.jfif",
   },
   {
     slug: "nettoyage-hotels",
@@ -481,7 +481,7 @@ export const SERVICES_DETAIL: ServiceDetail[] = [
     ],
     icon: Hotel,
     image:
-      "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&h=500&fit=crop",
+      "/services/Nettoyage Hôtels.png",
   },
   {
     slug: "nettoyage-restos-cafes",
@@ -525,7 +525,7 @@ export const SERVICES_DETAIL: ServiceDetail[] = [
     ],
     icon: UtensilsCrossed,
     image:
-      "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=800&h=500&fit=crop",
+      "/services/Nettoyage Resto-Cafés.png",
   },
   {
     slug: "hygiene-traitement-4d",
@@ -569,7 +569,7 @@ export const SERVICES_DETAIL: ServiceDetail[] = [
     ],
     icon: Shield,
     image:
-      "https://images.unsplash.com/photo-1584820927498-cfe5211fd8bf?w=800&h=500&fit=crop",
+      "/services/Hygiène Traitement 4D.png",
   },
   {
     slug: "nettoyage-moquettes-tapis",
@@ -613,7 +613,7 @@ export const SERVICES_DETAIL: ServiceDetail[] = [
     ],
     icon: Grip,
     image:
-      "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&h=500&fit=crop",
+      "/services/Nettoyage Moquettes & Tapis.png",
   },
   {
     slug: "nettoyage-appartements-villas",
@@ -657,7 +657,7 @@ export const SERVICES_DETAIL: ServiceDetail[] = [
     ],
     icon: Key,
     image:
-      "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&h=500&fit=crop",
+      "/services/Nettoyage appartements.png",
   },
   {
     slug: "nettoyage-residences-immeubles",
@@ -701,7 +701,7 @@ export const SERVICES_DETAIL: ServiceDetail[] = [
     ],
     icon: Building,
     image:
-      "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&h=500&fit=crop",
+      "/services/Nettoyage résidences, immeubles.png",
   },
   {
     slug: "nettoyage-centres-commerciaux",
@@ -745,7 +745,7 @@ export const SERVICES_DETAIL: ServiceDetail[] = [
     ],
     icon: ShoppingBag,
     image:
-      "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800&h=500&fit=crop",
+      "/services/Nettoyage centres commerciaux.png",
   },
   {
     slug: "nettoyage-coproprietes",
@@ -789,7 +789,7 @@ export const SERVICES_DETAIL: ServiceDetail[] = [
     ],
     icon: Users,
     image:
-      "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=800&h=500&fit=crop",
+      "/services/nettoyage corprorietes.png",
   },
   {
     slug: "nettoyage-evenementiel",
@@ -833,7 +833,7 @@ export const SERVICES_DETAIL: ServiceDetail[] = [
     ],
     icon: CalendarDays,
     image:
-      "https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=800&h=500&fit=crop",
+      "/services/Nettoyage événementiel.png",
   },
   {
     slug: "assainissement",
@@ -877,7 +877,7 @@ export const SERVICES_DETAIL: ServiceDetail[] = [
     ],
     icon: Droplets,
     image:
-      "https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=800&h=500&fit=crop",
+      "/services/assainissement.png",
   },
   {
     slug: "deratisation",
@@ -921,7 +921,7 @@ export const SERVICES_DETAIL: ServiceDetail[] = [
     ],
     icon: MousePointer2,
     image:
-      "https://images.unsplash.com/photo-1615824996195-f780bba7cfab?w=800&h=500&fit=crop",
+      "/services/Dératisation.png",
   },
   {
     slug: "desinsectisation",
@@ -1009,7 +1009,7 @@ export const SERVICES_DETAIL: ServiceDetail[] = [
     ],
     icon: Sparkles,
     image:
-      "https://images.unsplash.com/photo-1584820927498-cfe5211fd8bf?w=800&h=500&fit=crop",
+      "/services/Désinfection.jpg",
   },
   {
     slug: "jardinage",
@@ -1053,7 +1053,7 @@ export const SERVICES_DETAIL: ServiceDetail[] = [
     ],
     icon: Leaf,
     image:
-      "https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=800&h=500&fit=crop",
+      "/services/Jardinage.jfif",
   },
   {
     slug: "nettoyage-piscine",
@@ -1097,7 +1097,7 @@ export const SERVICES_DETAIL: ServiceDetail[] = [
     ],
     icon: Waves,
     image:
-      "https://images.unsplash.com/photo-1575429198097-0414ec08e8cd?w=800&h=500&fit=crop",
+      "/services/Nettoyage de Piscine.jfif",
   },
   {
     slug: "entretien-renovation",
@@ -1141,7 +1141,7 @@ export const SERVICES_DETAIL: ServiceDetail[] = [
     ],
     icon: Wrench,
     image:
-      "https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=800&h=500&fit=crop",
+      "/services/Entretien et rénovation.jfif",
   },
 ];
 

@@ -65,11 +65,19 @@ export default function ServicesPageContent() {
                 <div className="group bg-white rounded-3xl overflow-hidden border border-border/50 shadow-lg shadow-primary-navy/5 hover:shadow-2xl hover:shadow-primary-navy/10 transition-all duration-500 h-full flex flex-col card-hover">
                   {/* Image */}
                   <div className="relative h-48 overflow-hidden">
+                    {/* Blurred background to fill container edges */}
+                    <Image
+                      src={service.image}
+                      alt=""
+                      fill
+                      className="object-cover scale-110 blur-md opacity-60"
+                      aria-hidden="true"
+                    />
                     <Image
                       src={service.image}
                       alt={service.title}
                       fill
-                      className="object-cover group-hover:scale-110 transition-transform duration-700"
+                      className="object-contain group-hover:scale-110 transition-transform duration-700 relative"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-[#064e3b]/70 to-[#0D7377]/30 opacity-70 mix-blend-multiply"></div>
                     <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>

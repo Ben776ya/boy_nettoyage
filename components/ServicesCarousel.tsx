@@ -104,11 +104,19 @@ export default function ServicesCarousel() {
               >
                 {/* Image */}
                 <div className="relative h-48 overflow-hidden">
+                  {/* Blurred background to fill container edges */}
+                  <Image
+                    src={service.image}
+                    alt=""
+                    fill
+                    className="object-cover scale-110 blur-md opacity-60"
+                    aria-hidden="true"
+                  />
                   <Image
                     src={service.image}
                     alt={service.title}
                     fill
-                    className="object-cover group-hover:scale-110 transition-transform duration-700"
+                    className="object-contain group-hover:scale-110 transition-transform duration-700 relative"
                   />
                   <div className={`absolute inset-0 bg-gradient-to-t ${service.color} opacity-60 mix-blend-multiply`}></div>
                   <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
