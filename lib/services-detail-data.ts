@@ -351,7 +351,7 @@ export const SERVICES_DETAIL: ServiceDetail[] = [
     ],
     icon: Gem,
     image:
-      "/services/Cristallisation du Marbre.jfif",
+      "/services/Cristallisation du Marbre.jpg",
   },
   {
     slug: "cristallisation-parquet",
@@ -438,7 +438,7 @@ export const SERVICES_DETAIL: ServiceDetail[] = [
     ],
     icon: HeartPulse,
     image:
-      "/services/Nettoyage Hôpitaux.jfif",
+      "/services/Nettoyage Hôpitaux.jpg",
   },
   {
     slug: "nettoyage-hotels",
@@ -1053,7 +1053,7 @@ export const SERVICES_DETAIL: ServiceDetail[] = [
     ],
     icon: Leaf,
     image:
-      "/services/Jardinage.jfif",
+      "/services/Jardinage.jpg",
   },
   {
     slug: "nettoyage-piscine",
@@ -1097,7 +1097,7 @@ export const SERVICES_DETAIL: ServiceDetail[] = [
     ],
     icon: Waves,
     image:
-      "/services/Nettoyage de Piscine.jfif",
+      "/services/Nettoyage de Piscine.jpg",
   },
   {
     slug: "entretien-renovation",
@@ -1141,7 +1141,7 @@ export const SERVICES_DETAIL: ServiceDetail[] = [
     ],
     icon: Wrench,
     image:
-      "/services/Entretien et rénovation.jfif",
+      "/services/Entretien et rénovation.jpg",
   },
 ];
 
