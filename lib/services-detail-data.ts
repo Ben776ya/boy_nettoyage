@@ -132,7 +132,7 @@ export const SERVICES_DETAIL: ServiceDetail[] = [
     ],
     icon: Home,
     image:
-      "https://images.unsplash.com/photo-1527515637462-cff94eecc1ac?w=800&h=500&fit=crop",
+      "/services/Nettoyage airbnb.png",
   },
   {
     slug: "nettoyage-canape-fauteuil",
