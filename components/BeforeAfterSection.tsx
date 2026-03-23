@@ -20,24 +20,24 @@ const comparisons: ComparisonItem[] = [
     title: "Canapé en tissu",
     beforeDesc: "Taches tenaces, couleurs ternes",
     afterDesc: "Comme neuf, couleurs ravivées",
-    beforeImage: "https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?w=600&h=400&fit=crop&sat=-100&bri=-10",
-    afterImage: "https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?w=600&h=400&fit=crop",
+    beforeImage: "/images/before.jpeg",
+    afterImage: "/images/after.jpeg",
     rating: 5,
   },
   {
     title: "Matelas Premium",
     beforeDesc: "Taches jaunes, acariens, odeurs",
     afterDesc: "Désinfecté, hygiénique, frais",
-    beforeImage: "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=600&h=400&fit=crop&sat=-100&bri=-10",
-    afterImage: "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=600&h=400&fit=crop",
+    beforeImage: "/images/before1.jpeg",
+    afterImage: "/images/after1.jpeg",
     rating: 5,
   },
   {
     title: "Tapis Berbère",
     beforeDesc: "Poussière incrustée, couleurs fanées",
     afterDesc: "Fibres nettoyées, couleurs vives",
-    beforeImage: "https://images.unsplash.com/photo-1600166898405-da9535204843?w=600&h=400&fit=crop&sat=-100&bri=-10",
-    afterImage: "https://images.unsplash.com/photo-1600166898405-da9535204843?w=600&h=400&fit=crop",
+    beforeImage: "/images/before2.jpeg",
+    afterImage: "/images/after2.jpeg",
     rating: 5,
   },
 ];
@@ -117,7 +117,7 @@ function ComparisonCard({ item }: { item: ComparisonItem }) {
             src={item.beforeImage}
             alt={`${item.title} - Avant`}
             fill
-            className="object-cover grayscale"
+            className="object-cover"
           />
           {/* Before badge */}
           <div className="absolute top-4 left-4 px-3 py-1.5 rounded-full bg-gray-800/90 text-white text-xs font-bold shadow-lg">
