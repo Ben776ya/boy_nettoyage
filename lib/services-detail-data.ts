@@ -394,7 +394,7 @@ export const SERVICES_DETAIL: ServiceDetail[] = [
     ],
     icon: Layers,
     image:
-      "/services/Cristallisation du Parquet.webp",
+      "/services/Cristallisation du Parquet.png",
   },
   {
     slug: "nettoyage-hopitaux",
@@ -438,7 +438,7 @@ export const SERVICES_DETAIL: ServiceDetail[] = [
     ],
     icon: HeartPulse,
     image:
-      "/services/Nettoyage Hôpitaux.jpg",
+      "/services/Nettoyage Hôpitaux.png",
   },
   {
     slug: "nettoyage-hotels",
@@ -1097,7 +1097,7 @@ export const SERVICES_DETAIL: ServiceDetail[] = [
     ],
     icon: Waves,
     image:
-      "/services/Nettoyage de Piscine.jpg",
+      "/services/Nettoyage de Piscine.png",
   },
   {
     slug: "entretien-renovation",
