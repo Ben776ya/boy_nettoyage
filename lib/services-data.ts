@@ -3,7 +3,6 @@ import {
   Building,
   Gem,
   Hotel,
-  Building2,
   Store,
   Users,
   CalendarDays,
@@ -34,12 +33,12 @@ export interface Service {
 
 export const ALL_SERVICES: Service[] = [
   {
-    id: "nettoyage-villa",
+    id: "nettoyage-appartements-villas",
     icon: Home,
-    title: "Nettoyage Villa",
-    description: "Nettoyage complet et professionnel de villas et maisons individuelles. Un intérieur impeccable pour votre confort quotidien.",
-    bullets: ["Nettoyage complet des pièces", "Traitement des sols et surfaces", "Désinfection sanitaires"],
-    image: "https://images.unsplash.com/photo-1527515637462-cff94eecc1ac?w=600&h=400&fit=crop",
+    title: "Nettoyage appartements / maisons / villas",
+    description: "Nettoyage complet et en profondeur de vos espaces résidentiels pour un cadre de vie sain et impeccable.",
+    bullets: ["Nettoyage complet de toutes les pièces", "Désinfection sanitaires et cuisines", "Produits écologiques sans danger"],
+    image: "/services/Nettoyage appartements.png",
     color: "from-blue-500 to-cyan-500",
     bgColor: "bg-blue-500/10",
     textColor: "text-blue-600",
@@ -76,17 +75,6 @@ export const ALL_SERVICES: Service[] = [
     color: "from-amber-500 to-orange-500",
     bgColor: "bg-amber-500/10",
     textColor: "text-amber-600",
-  },
-  {
-    id: "nettoyage-appartement",
-    icon: Building2,
-    title: "Nettoyage Appartement",
-    description: "Nettoyage en profondeur pour appartements. Service ponctuel ou régulier selon vos besoins.",
-    bullets: ["Nettoyage complet", "Service régulier disponible", "Produits écologiques"],
-    image: "/services/Nettoyage appartements.png",
-    color: "from-teal-500 to-cyan-500",
-    bgColor: "bg-teal-500/10",
-    textColor: "text-teal-600",
   },
   {
     id: "nettoyage-locaux-commerciaux",
