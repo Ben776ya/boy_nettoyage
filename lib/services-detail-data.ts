@@ -355,7 +355,7 @@ export const SERVICES_DETAIL: ServiceDetail[] = [
   },
   {
     slug: "cristallisation-parquet",
-    title: "Cristallisation du Parquet",
+    title: "Ponçage et Vitrage du Parquet",
     description:
       "Vitrification, ponçage et traitement de parquets pour redonner brillance et protection à vos sols en bois.",
     intro:
