@@ -94,7 +94,7 @@ export default function B2BContactSection() {
                     </p>
                     <div className="space-y-2">
                       <a
-                        href="tel:0661408577"
+                        href="tel:+212661408577"
                         className="flex items-center gap-3 text-white hover:text-whatsapp transition-colors"
                       >
                         <div className="w-8 h-8 rounded-lg bg-white/10 flex items-center justify-center flex-shrink-0">
@@ -106,7 +106,7 @@ export default function B2BContactSection() {
                         </div>
                       </a>
                       <a
-                        href="tel:0661538507"
+                        href="tel:+212661538507"
                         className="flex items-center gap-3 text-white hover:text-primary-teal transition-colors"
                       >
                         <div className="w-8 h-8 rounded-lg bg-white/10 flex items-center justify-center flex-shrink-0">
@@ -115,7 +115,7 @@ export default function B2BContactSection() {
                         <span className="font-medium">{PHONE_SECONDARY}</span>
                       </a>
                       <a
-                        href="tel:0522980621"
+                        href="tel:+212522980621"
                         className="flex items-center gap-3 text-white hover:text-primary-teal transition-colors"
                       >
                         <div className="w-8 h-8 rounded-lg bg-white/10 flex items-center justify-center flex-shrink-0">

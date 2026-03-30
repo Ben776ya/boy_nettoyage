@@ -9,7 +9,7 @@ export function cn(...inputs: ClassValue[]) {
 export const COMPANY_NAME = "BOY NETTOYAGE PRO";
 export const COMPANY_TAGLINE = "La propreté au service de votre confort et de votre image";
 export const YEAR_FOUNDED = "2016";
-export const YEARS_EXPERIENCE = "8+";
+export const YEARS_EXPERIENCE = "10+";
 
 // Contact Information
 export const PHONE_MAIN = "+212 6 61 40 85 77";

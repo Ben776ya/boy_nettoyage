@@ -14,12 +14,12 @@ import {
 
 export default function Footer() {
   const services = [
-    "Nettoyage Villas & Maisons",
-    "Nettoyage Bureaux & Commercial",
-    "Nettoyage Industriel",
-    "Fin de Chantier",
-    "Dératisation & 3D",
-    "Cristallisation Marbre",
+    { label: "Nettoyage Villas & Maisons", href: "/services/nettoyage-appartements-villas" },
+    { label: "Nettoyage Bureaux & Commercial", href: "/services/nettoyage-bureaux" },
+    { label: "Nettoyage Industriel", href: "/services/nettoyage-industriel" },
+    { label: "Fin de Chantier", href: "/services/nettoyage-de-chantier" },
+    { label: "Dératisation & 3D", href: "/services/deratisation" },
+    { label: "Cristallisation Marbre", href: "/services/cristallisation-marbre" },
   ];
 
   const links = [
@@ -72,13 +72,13 @@ export default function Footer() {
             </h3>
             <ul className="space-y-3">
               {services.map((service) => (
-                <li key={service}>
+                <li key={service.label}>
                   <Link
-                    href="/#services"
+                    href={service.href}
                     className="group flex items-center gap-2 text-sm text-gray-300 hover:text-white transition-colors"
                   >
                     <span className="w-1.5 h-1.5 rounded-full bg-primary-teal group-hover:bg-white transition-colors"></span>
-                    {service}
+                    {service.label}
                   </Link>
                 </li>
               ))}
@@ -113,7 +113,7 @@ export default function Footer() {
             <ul className="space-y-4">
               <li>
                 <a
-                  href="tel:0661408577"
+                  href="tel:+212661408577"
                   className="group flex items-center gap-3 text-sm text-gray-300 hover:text-white transition-colors"
                 >
                   <div className="w-10 h-10 rounded-xl bg-white/10 flex items-center justify-center group-hover:bg-primary-teal/20 transition-colors flex-shrink-0">
@@ -127,7 +127,7 @@ export default function Footer() {
               </li>
               <li>
                 <a
-                  href="tel:0661538507"
+                  href="tel:+212661538507"
                   className="group flex items-center gap-3 text-sm text-gray-300 hover:text-white transition-colors"
                 >
                   <div className="w-10 h-10 rounded-xl bg-white/10 flex items-center justify-center group-hover:bg-primary-teal/20 transition-colors flex-shrink-0">
@@ -141,7 +141,7 @@ export default function Footer() {
               </li>
               <li>
                 <a
-                  href="tel:0522980621"
+                  href="tel:+212522980621"
                   className="group flex items-center gap-3 text-sm text-gray-300 hover:text-white transition-colors"
                 >
                   <div className="w-10 h-10 rounded-xl bg-white/10 flex items-center justify-center group-hover:bg-primary-teal/20 transition-colors flex-shrink-0">
