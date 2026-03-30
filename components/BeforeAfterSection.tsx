@@ -3,7 +3,7 @@
 import { useState } from "react";
 import Image from "next/image";
 import { Sparkles, Star } from "lucide-react";
-import { cn } from "@/lib/utils";
+import { cn, YEARS_EXPERIENCE } from "@/lib/utils";
 import ScrollReveal from "./ScrollReveal";
 
 interface ComparisonItem {
@@ -84,7 +84,7 @@ export default function BeforeAfterSection() {
             {[
               { value: "100%", label: "Satisfaction client" },
               { value: "24h", label: "Délai d'intervention" },
-              { value: "10+", label: "Années d'expérience" },
+              { value: YEARS_EXPERIENCE, label: "Années d'expérience" },
               { value: "20k+", label: "Projets réalisés" },
             ].map((stat) => (
               <div key={stat.label} className="text-center p-6 rounded-2xl bg-white shadow-lg shadow-primary-navy/5 border border-border/50 card-hover">

@@ -2,11 +2,12 @@
 
 import { User, Users, CheckCircle, Clock, ArrowRight, TrendingUp } from "lucide-react";
 import ScrollReveal from "../ScrollReveal";
+import { YEARS_EXPERIENCE } from "@/lib/utils";
 
 const figures = [
   {
     icon: User,
-    value: "10+",
+    value: YEARS_EXPERIENCE,
     label: "Années d'expérience",
     iconBg: "from-bright-blue to-indigo-500",
   },

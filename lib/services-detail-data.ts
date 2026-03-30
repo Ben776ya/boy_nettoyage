@@ -52,7 +52,7 @@ export const SERVICES_DETAIL: ServiceDetail[] = [
     description:
       "Remise en état parfaite après chantier pour une livraison impeccable de vos espaces.",
     intro:
-      "Votre chantier est terminé et vous avez besoin d'une remise en état impeccable ? Eden Plaza Nettoyage intervient pour un nettoyage fin de chantier professionnel, afin de livrer des espaces propres et prêts à l'usage.",
+      "Votre chantier est terminé et vous avez besoin d'une remise en état impeccable ? BOY NETTOYAGE PRO intervient pour un nettoyage fin de chantier professionnel, afin de livrer des espaces propres et prêts à l'usage.",
     prestations: [
       "Dépoussiérage complet des surfaces, plafonds et murs",
       "Nettoyage des sols (carrelage, béton, parquet) après travaux",
@@ -96,7 +96,7 @@ export const SERVICES_DETAIL: ServiceDetail[] = [
     description:
       "Service express entre locataires. Nettoyage complet, changement de linge et vérifications qualité.",
     intro:
-      "Vous gérez un ou plusieurs logements Airbnb et souhaitez offrir une expérience impeccable à chaque voyageur ? Eden Plaza Nettoyage assure un service express et méticuleux entre chaque locataire.",
+      "Vous gérez un ou plusieurs logements Airbnb et souhaitez offrir une expérience impeccable à chaque voyageur ? BOY NETTOYAGE PRO assure un service express et méticuleux entre chaque locataire.",
     prestations: [
       "Nettoyage complet de l'appartement ou de la maison",
       "Changement du linge de lit et de toilette",
@@ -140,7 +140,7 @@ export const SERVICES_DETAIL: ServiceDetail[] = [
     description:
       "Nettoyage et détachage professionnel par injection/extraction et vapeur.",
     intro:
-      "Vos canapés et fauteuils ont perdu leur éclat ? Eden Plaza Nettoyage redonne vie à vos meubles rembourrés grâce à des techniques professionnelles d'injection/extraction et de nettoyage vapeur.",
+      "Vos canapés et fauteuils ont perdu leur éclat ? BOY NETTOYAGE PRO redonne vie à vos meubles rembourrés grâce à des techniques professionnelles d'injection/extraction et de nettoyage vapeur.",
     prestations: [
       "Nettoyage par injection/extraction en profondeur",
       "Nettoyage vapeur haute température",
@@ -184,7 +184,7 @@ export const SERVICES_DETAIL: ServiceDetail[] = [
     description:
       "Nettoyage spécialisé pour redonner éclat et transparence à vos bâtiments.",
     intro:
-      "Des vitres et façades impeccables reflètent le professionnalisme de votre entreprise. Eden Plaza Nettoyage intervient avec des techniques spécialisées pour redonner éclat et transparence à vos bâtiments.",
+      "Des vitres et façades impeccables reflètent le professionnalisme de votre entreprise. BOY NETTOYAGE PRO intervient avec des techniques spécialisées pour redonner éclat et transparence à vos bâtiments.",
     prestations: [
       "Nettoyage de vitres intérieures et extérieures",
       "Nettoyage de façades vitrées et murs rideaux",
@@ -228,7 +228,7 @@ export const SERVICES_DETAIL: ServiceDetail[] = [
     description:
       "Entretien pour usines, ateliers et entrepôts avec équipements et normes de sécurité renforcées.",
     intro:
-      "Votre site industriel a besoin d'un nettoyage rigoureux et sécurisé ? Eden Plaza Nettoyage propose des interventions professionnelles adaptées aux environnements industriels, entrepôts, usines et zones sensibles.",
+      "Votre site industriel a besoin d'un nettoyage rigoureux et sécurisé ? BOY NETTOYAGE PRO propose des interventions professionnelles adaptées aux environnements industriels, entrepôts, usines et zones sensibles.",
     prestations: [
       "Nettoyage de sols industriels (béton, résine, carrelage)",
       "Dégraissage d'équipements, lignes de production et machines",
@@ -272,7 +272,7 @@ export const SERVICES_DETAIL: ServiceDetail[] = [
     description:
       "Services complets pour espaces professionnels, magasins et entrepôts. Hygiène & Sécurité.",
     intro:
-      "Un environnement de travail propre booste la productivité et renforce votre image professionnelle. Eden Plaza Nettoyage assure l'entretien régulier de vos bureaux, locaux commerciaux et espaces de travail.",
+      "Un environnement de travail propre booste la productivité et renforce votre image professionnelle. BOY NETTOYAGE PRO assure l'entretien régulier de vos bureaux, locaux commerciaux et espaces de travail.",
     prestations: [
       "Nettoyage quotidien ou périodique des bureaux",
       "Dépoussiérage du mobilier, écrans et équipements",
@@ -316,7 +316,7 @@ export const SERVICES_DETAIL: ServiceDetail[] = [
     description:
       "Ponçage, polissage et cristallisation professionnelle pour redonner éclat et brillance à vos sols en marbre.",
     intro:
-      "Vos sols en marbre ont perdu leur brillance naturelle ? Eden Plaza Nettoyage redonne vie et éclat à votre marbre grâce à des techniques professionnelles de ponçage, polissage et cristallisation.",
+      "Vos sols en marbre ont perdu leur brillance naturelle ? BOY NETTOYAGE PRO redonne vie et éclat à votre marbre grâce à des techniques professionnelles de ponçage, polissage et cristallisation.",
     prestations: [
       "Ponçage et polissage de sols en marbre et granit",
       "Cristallisation pour une brillance durable",
@@ -359,7 +359,7 @@ export const SERVICES_DETAIL: ServiceDetail[] = [
     description:
       "Vitrification, ponçage et traitement de parquets pour redonner brillance et protection à vos sols en bois.",
     intro:
-      "Vos sols en parquet ont perdu leur éclat d'origine ? Eden Plaza Nettoyage redonne brillance et protection à vos parquets grâce à des techniques professionnelles de vitrification et traitement du bois.",
+      "Vos sols en parquet ont perdu leur éclat d'origine ? BOY NETTOYAGE PRO redonne brillance et protection à vos parquets grâce à des techniques professionnelles de vitrification et traitement du bois.",
     prestations: [
       "Ponçage de parquets massifs et contrecollés",
       "Vitrification et traitement de parquets",
@@ -402,7 +402,7 @@ export const SERVICES_DETAIL: ServiceDetail[] = [
     description:
       "Protocoles stricts de désinfection pour garantir une hygiène irréprochable dans les établissements de santé.",
     intro:
-      "Un environnement médical propre est essentiel pour la sécurité des patients et du personnel. Eden Plaza Nettoyage applique des protocoles stricts de désinfection pour garantir une hygiène irréprochable dans les hôpitaux, cliniques et cabinets médicaux.",
+      "Un environnement médical propre est essentiel pour la sécurité des patients et du personnel. BOY NETTOYAGE PRO applique des protocoles stricts de désinfection pour garantir une hygiène irréprochable dans les hôpitaux, cliniques et cabinets médicaux.",
     prestations: [
       "Désinfection des chambres, couloirs et zones de soins",
       "Nettoyage des blocs opératoires et salles d'examen",
@@ -489,7 +489,7 @@ export const SERVICES_DETAIL: ServiceDetail[] = [
     description:
       "Entretien et désinfection de vos cuisines, salles et terrasses dans le respect des normes d'hygiène alimentaire.",
     intro:
-      "La propreté est un élément clé de votre réputation. Eden Plaza Nettoyage garantit l'entretien et la désinfection de vos cuisines, salles et terrasses, en respectant les normes d'hygiène alimentaire.",
+      "La propreté est un élément clé de votre réputation. BOY NETTOYAGE PRO garantit l'entretien et la désinfection de vos cuisines, salles et terrasses, en respectant les normes d'hygiène alimentaire.",
     prestations: [
       "Nettoyage en profondeur des cuisines professionnelles",
       "Dégraissage des équipements, hottes et surfaces de cuisson",
@@ -533,7 +533,7 @@ export const SERVICES_DETAIL: ServiceDetail[] = [
     description:
       "Désinfection, Dératisation, Désinsectisation et Déréptilisation avec produits homologués.",
     intro:
-      "Protégez vos espaces contre les nuisibles et les risques sanitaires. Eden Plaza Nettoyage propose un traitement 4D complet : Désinfection, Dératisation, Désinsectisation et Déréptilisation avec des produits homologués et sûrs.",
+      "Protégez vos espaces contre les nuisibles et les risques sanitaires. BOY NETTOYAGE PRO propose un traitement 4D complet : Désinfection, Dératisation, Désinsectisation et Déréptilisation avec des produits homologués et sûrs.",
     prestations: [
       "Désinfection complète des locaux (virus, bactéries, moisissures)",
       "Dératisation : élimination et prévention contre les rongeurs",
@@ -577,7 +577,7 @@ export const SERVICES_DETAIL: ServiceDetail[] = [
     description:
       "Nettoyage en profondeur pour éliminer acariens, taches et impuretés.",
     intro:
-      "Vos moquettes et tapis accumulent poussières, acariens et taches au fil du temps. Eden Plaza Nettoyage les nettoie en profondeur pour un résultat sain, frais et éclatant.",
+      "Vos moquettes et tapis accumulent poussières, acariens et taches au fil du temps. BOY NETTOYAGE PRO les nettoie en profondeur pour un résultat sain, frais et éclatant.",
     prestations: [
       "Nettoyage en profondeur par injection/extraction",
       "Nettoyage vapeur haute température",
@@ -621,7 +621,7 @@ export const SERVICES_DETAIL: ServiceDetail[] = [
     description:
       "Nettoyage complet et en profondeur de vos espaces résidentiels pour un cadre de vie sain et impeccable.",
     intro:
-      "Votre appartement, maison ou villa mérite un entretien irréprochable. Eden Plaza Nettoyage intervient pour un nettoyage complet et en profondeur de tous vos espaces résidentiels, pour un cadre de vie sain, propre et agréable.",
+      "Votre appartement, maison ou villa mérite un entretien irréprochable. BOY NETTOYAGE PRO intervient pour un nettoyage complet et en profondeur de tous vos espaces résidentiels, pour un cadre de vie sain, propre et agréable.",
     prestations: [
       "Nettoyage complet de toutes les pièces",
       "Dépoussiérage des meubles, plafonds et surfaces",
@@ -665,7 +665,7 @@ export const SERVICES_DETAIL: ServiceDetail[] = [
     description:
       "Entretien des parties communes, halls d'entrée et espaces partagés de vos résidences et immeubles.",
     intro:
-      "La propreté des parties communes est essentielle à la qualité de vie des résidents. Eden Plaza Nettoyage assure l'entretien régulier de vos halls d'entrée, escaliers, couloirs et espaces extérieurs.",
+      "La propreté des parties communes est essentielle à la qualité de vie des résidents. BOY NETTOYAGE PRO assure l'entretien régulier de vos halls d'entrée, escaliers, couloirs et espaces extérieurs.",
     prestations: [
       "Nettoyage des halls d'entrée et couloirs",
       "Entretien des escaliers et cages d'escalier",
@@ -709,7 +709,7 @@ export const SERVICES_DETAIL: ServiceDetail[] = [
     description:
       "Nettoyage professionnel des espaces commerciaux, galeries et zones de passage à fort trafic.",
     intro:
-      "Un centre commercial propre et accueillant est un gage de qualité pour vos clients. Eden Plaza Nettoyage assure l'entretien complet de vos galeries marchandes, zones de restauration et espaces communs.",
+      "Un centre commercial propre et accueillant est un gage de qualité pour vos clients. BOY NETTOYAGE PRO assure l'entretien complet de vos galeries marchandes, zones de restauration et espaces communs.",
     prestations: [
       "Nettoyage des galeries et allées de circulation",
       "Entretien des sanitaires publics",
@@ -753,7 +753,7 @@ export const SERVICES_DETAIL: ServiceDetail[] = [
     description:
       "Gestion complète de la propreté des parties communes de vos copropriétés.",
     intro:
-      "La gestion de la propreté d'une copropriété nécessite rigueur et régularité. Eden Plaza Nettoyage prend en charge l'entretien des parties communes pour garantir un cadre de vie agréable à tous les résidents.",
+      "La gestion de la propreté d'une copropriété nécessite rigueur et régularité. BOY NETTOYAGE PRO prend en charge l'entretien des parties communes pour garantir un cadre de vie agréable à tous les résidents.",
     prestations: [
       "Nettoyage hebdomadaire des parties communes",
       "Entretien des halls, paliers et escaliers",
@@ -797,7 +797,7 @@ export const SERVICES_DETAIL: ServiceDetail[] = [
     description:
       "Préparation et remise en état de vos espaces avant, pendant et après tout type d'événement.",
     intro:
-      "Votre événement mérite un cadre impeccable. Eden Plaza Nettoyage intervient avant, pendant et après vos manifestations pour assurer une propreté irréprochable tout au long de votre événement.",
+      "Votre événement mérite un cadre impeccable. BOY NETTOYAGE PRO intervient avant, pendant et après vos manifestations pour assurer une propreté irréprochable tout au long de votre événement.",
     prestations: [
       "Nettoyage et préparation des lieux avant l'événement",
       "Entretien en continu pendant la manifestation",
@@ -841,7 +841,7 @@ export const SERVICES_DETAIL: ServiceDetail[] = [
     description:
       "Services d'assainissement professionnel pour garantir un environnement sain et conforme aux normes.",
     intro:
-      "L'assainissement de vos espaces est essentiel pour garantir la santé et la sécurité de vos occupants. Eden Plaza Nettoyage propose des services d'assainissement professionnels pour tous types de locaux.",
+      "L'assainissement de vos espaces est essentiel pour garantir la santé et la sécurité de vos occupants. BOY NETTOYAGE PRO propose des services d'assainissement professionnels pour tous types de locaux.",
     prestations: [
       "Traitement et assainissement des réseaux d'eaux usées",
       "Débouchage et curage des canalisations",
@@ -885,7 +885,7 @@ export const SERVICES_DETAIL: ServiceDetail[] = [
     description:
       "Élimination et prévention des rongeurs avec des produits homologués et des techniques éprouvées.",
     intro:
-      "La présence de rongeurs représente un danger sanitaire et économique sérieux. Eden Plaza Nettoyage propose des interventions de dératisation efficaces et sécurisées pour éliminer et prévenir les infestations de rats et souris.",
+      "La présence de rongeurs représente un danger sanitaire et économique sérieux. BOY NETTOYAGE PRO propose des interventions de dératisation efficaces et sécurisées pour éliminer et prévenir les infestations de rats et souris.",
     prestations: [
       "Diagnostic et inspection de l'infestation",
       "Pose d'appâts rodenticides homologués",
@@ -929,7 +929,7 @@ export const SERVICES_DETAIL: ServiceDetail[] = [
     description:
       "Traitement professionnel contre les insectes nuisibles : cafards, moustiques, punaises et fourmis.",
     intro:
-      "Les insectes nuisibles représentent un risque sanitaire et peuvent nuire à votre réputation. Eden Plaza Nettoyage propose des traitements de désinsectisation efficaces contre tous types d'insectes indésirables.",
+      "Les insectes nuisibles représentent un risque sanitaire et peuvent nuire à votre réputation. BOY NETTOYAGE PRO propose des traitements de désinsectisation efficaces contre tous types d'insectes indésirables.",
     prestations: [
       "Traitement contre les cafards et blattes",
       "Traitement anti-moustiques et moucherons",
@@ -973,7 +973,7 @@ export const SERVICES_DETAIL: ServiceDetail[] = [
     description:
       "Désinfection complète de vos espaces contre virus, bactéries et agents pathogènes.",
     intro:
-      "La désinfection de vos locaux est indispensable pour protéger la santé de vos collaborateurs et clients. Eden Plaza Nettoyage propose des traitements de désinfection complets avec des produits homologués et des techniques éprouvées.",
+      "La désinfection de vos locaux est indispensable pour protéger la santé de vos collaborateurs et clients. BOY NETTOYAGE PRO propose des traitements de désinfection complets avec des produits homologués et des techniques éprouvées.",
     prestations: [
       "Désinfection par brumisation ou nébulisation",
       "Traitement des surfaces à contact fréquent",
@@ -1017,7 +1017,7 @@ export const SERVICES_DETAIL: ServiceDetail[] = [
     description:
       "Entretien et aménagement de vos jardins, espaces verts et terrasses pour un cadre verdoyant.",
     intro:
-      "Un jardin bien entretenu est le reflet de votre soin pour votre environnement. Eden Plaza Nettoyage propose des services de jardinage et d'entretien des espaces verts pour particuliers et professionnels.",
+      "Un jardin bien entretenu est le reflet de votre soin pour votre environnement. BOY NETTOYAGE PRO propose des services de jardinage et d'entretien des espaces verts pour particuliers et professionnels.",
     prestations: [
       "Tonte de pelouse et entretien du gazon",
       "Taille des haies, arbustes et arbres",
@@ -1061,7 +1061,7 @@ export const SERVICES_DETAIL: ServiceDetail[] = [
     description:
       "Entretien complet de vos piscines privées et publiques : nettoyage, traitement de l'eau et maintenance régulière.",
     intro:
-      "Une piscine propre et bien entretenue est synonyme de plaisir et de sécurité pour vous et vos proches. Eden Plaza Nettoyage assure l'entretien complet de vos piscines privées, d'hôtels ou de résidences, du nettoyage des parois au traitement chimique de l'eau.",
+      "Une piscine propre et bien entretenue est synonyme de plaisir et de sécurité pour vous et vos proches. BOY NETTOYAGE PRO assure l'entretien complet de vos piscines privées, d'hôtels ou de résidences, du nettoyage des parois au traitement chimique de l'eau.",
     prestations: [
       "Nettoyage des parois, fond et margelles de la piscine",
       "Aspiration des dépôts et débris au fond du bassin",
@@ -1105,7 +1105,7 @@ export const SERVICES_DETAIL: ServiceDetail[] = [
     description:
       "Services complets d'entretien courant et de rénovation légère pour vos espaces professionnels et résidentiels.",
     intro:
-      "Au-delà du nettoyage, Eden Plaza Nettoyage propose des services d'entretien courant et de petite rénovation pour maintenir vos espaces en parfait état et préserver la valeur de vos biens.",
+      "Au-delà du nettoyage, BOY NETTOYAGE PRO propose des services d'entretien courant et de petite rénovation pour maintenir vos espaces en parfait état et préserver la valeur de vos biens.",
     prestations: [
       "Entretien courant des installations et équipements",
       "Petits travaux de rénovation et remise en état",
