@@ -159,15 +159,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="fr">
-      <head>
+      <body className={`${plusJakartaSans.variable} antialiased`}>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify([localBusinessSchema, websiteSchema]),
           }}
         />
-      </head>
-      <body className={`${plusJakartaSans.variable} antialiased`}>
         <Navbar />
         <main>{children}</main>
         <Footer />
