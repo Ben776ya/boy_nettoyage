@@ -26,6 +26,7 @@ export default function Footer() {
     { label: "Accueil", href: "/" },
     { label: "Services", href: "/services" },
     { label: "Qui sommes nous ?", href: "/qui-sommes-nous" },
+    { label: "Blog", href: "/blog" },
     { label: "Résultats", href: "/#resultats" },
     { label: "Contact", href: "/#contact" },
   ];

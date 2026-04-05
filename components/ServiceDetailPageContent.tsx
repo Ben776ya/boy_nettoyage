@@ -15,8 +15,10 @@ import {
   ArrowRight,
   ClipboardList,
   Banknote,
+  BookOpen,
 } from "lucide-react";
 import { SERVICES_DETAIL, getOtherServices } from "@/lib/services-detail-data";
+import { getPostsByService } from "@/lib/blog-data";
 import ScrollReveal from "./ScrollReveal";
 import { PHONE_MAIN } from "@/lib/utils";
 
@@ -32,6 +34,7 @@ export default function ServiceDetailPageContent({
   const service = SERVICES_DETAIL.find((s) => s.slug === slug)!;
   const [openFaq, setOpenFaq] = useState<number | null>(0);
   const otherServices = getOtherServices(slug);
+  const relatedArticles = getPostsByService(slug, 2);
 
   return (
     <>
@@ -331,6 +334,38 @@ export default function ServiceDetailPageContent({
                   ))}
                 </div>
               </div>
+
+              {/* Block B2 — Related Blog Articles */}
+              {relatedArticles.length > 0 && (
+                <div className="bg-white rounded-2xl border border-[#E5E7EB] shadow-sm overflow-hidden">
+                  <div className="p-4 border-b border-[#E5E7EB]">
+                    <h3 className="font-bold text-[#1B3A5C] text-base">
+                      Guides pratiques
+                    </h3>
+                  </div>
+                  <div className="divide-y divide-[#E5E7EB]">
+                    {relatedArticles.map((article) => (
+                      <Link
+                        key={article.slug}
+                        href={`/blog/${article.slug}`}
+                        className="flex items-start gap-3 px-4 py-3 hover:bg-[#0D7377]/5 group transition-colors"
+                      >
+                        <span className="flex-shrink-0 w-8 h-8 rounded-lg bg-[#0D7377]/10 flex items-center justify-center mt-0.5">
+                          <BookOpen className="w-4 h-4 text-[#0D7377]" />
+                        </span>
+                        <div>
+                          <span className="text-sm text-[#374151] group-hover:text-[#0D7377] transition-colors leading-snug line-clamp-2">
+                            {article.title}
+                          </span>
+                          <span className="block text-xs text-[#0D7377] font-medium mt-1">
+                            Lire l&apos;article &rarr;
+                          </span>
+                        </div>
+                      </Link>
+                    ))}
+                  </div>
+                </div>
+              )}
 
               {/* Block C — Desktop Sticky CTA (hidden on mobile) */}
               <div className="hidden lg:block sticky top-24 rounded-2xl overflow-hidden bg-gradient-to-br from-[#064e3b] to-[#0D7377] p-6 text-white shadow-xl">

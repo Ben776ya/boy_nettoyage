@@ -35,6 +35,7 @@ export default function Navbar() {
     { href: "/services", label: "Services" },
     { href: "/qui-sommes-nous", label: "Qui sommes nous ?" },
     { href: "/#resultats", label: "Résultats" },
+    { href: "/blog", label: "Blog" },
     { href: "/#contact", label: "Contact" },
   ];
 
