@@ -38,7 +38,7 @@ export const metadata: Metadata = {
   publisher: "BOY NETTOYAGE PRO",
   formatDetection: { telephone: true, email: true, address: true },
   alternates: {
-    canonical: BASE_URL,
+    canonical: "/",
   },
   openGraph: {
     title: "BOY NETTOYAGE PRO | Nettoyage Professionnel à Casablanca",
@@ -50,10 +50,10 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "/og-image.jpg",
+        url: "/logo.png",
         width: 1200,
         height: 630,
-        alt: "BOY NETTOYAGE PRO - Services de nettoyage professionnel à Casablanca",
+        alt: "BOY NETTOYAGE PRO",
       },
     ],
   },
@@ -62,7 +62,7 @@ export const metadata: Metadata = {
     title: "BOY NETTOYAGE PRO | Nettoyage Professionnel à Casablanca",
     description:
       "Services de nettoyage et hygiène professionnelle à Casablanca.",
-    images: ["/og-image.jpg"],
+    images: ["/logo.png"],
   },
   robots: {
     index: true,

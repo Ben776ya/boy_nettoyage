@@ -14,7 +14,7 @@ const figures = [
   },
   {
     icon: Users,
-    value: "20,000+",
+    value: "500+",
     label: "Clients satisfaits",
     iconBg: "from-primary-teal to-cyan-500",
   },

@@ -151,7 +151,7 @@ export default function HeroSection() {
                       </div>
                     </div>
                     <div>
-                      <span className="text-base sm:text-lg font-bold text-primary-navy">20k+</span>
+                      <span className="text-base sm:text-lg font-bold text-primary-navy">500+</span>
                       <p className="text-[10px] sm:text-xs text-text-gray">Clients satisfaits</p>
                     </div>
                   </div>

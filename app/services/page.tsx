@@ -2,11 +2,16 @@ import ServicesPageContent from "@/components/ServicesPageContent";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Tous Nos Services de Nettoyage à Casablanca — 25 Prestations",
+  title: "Nos Services de Nettoyage Professionnel à Casablanca",
   description:
-    "Découvrez les 25 services de nettoyage et hygiène de BOY NETTOYAGE PRO à Casablanca : villas, bureaux, industrie, hôtels, dératisation, cristallisation marbre et plus. Devis gratuit.",
+    "Découvrez nos 25 services de nettoyage et d'hygiène professionnelle à Casablanca et partout au Maroc. Villas, bureaux, hôtels, industrie, dératisation et plus.",
   alternates: {
-    canonical: "https://www.boynettoyage.ma/services",
+    canonical: "/services",
+  },
+  openGraph: {
+    title: "Nos Services de Nettoyage Professionnel à Casablanca | BOY NETTOYAGE PRO",
+    description:
+      "Découvrez nos 25 services de nettoyage et d'hygiène professionnelle à Casablanca et partout au Maroc. Villas, bureaux, hôtels, industrie, dératisation et plus.",
   },
 };
 

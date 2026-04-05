@@ -2,7 +2,8 @@ import { notFound } from "next/navigation";
 import { Metadata } from "next";
 import { SERVICES_DETAIL, getServiceBySlug } from "@/lib/services-detail-data";
 import ServiceDetailPageContent from "@/components/ServiceDetailPageContent";
-import { COMPANY_NAME } from "@/lib/utils";
+import FAQSchema from "@/components/seo/FAQSchema";
+import BreadcrumbSchema from "@/components/seo/BreadcrumbSchema";
 
 interface PageProps {
   params: Promise<{ slug: string }>;
@@ -19,13 +20,18 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const service = getServiceBySlug(slug);
   if (!service) return {};
 
-  const description = `${service.title} à Casablanca par ${COMPANY_NAME}. ${service.description} Devis gratuit 24h/24. Appelez le 0661 408 577.`;
+  const title = `${service.title} à Casablanca`;
+  const description = `BOY NETTOYAGE PRO assure le ${service.title.toLowerCase()} professionnel à Casablanca et partout au Maroc. Équipe qualifiée, produits certifiés, devis gratuit sous 24h.`;
 
   return {
-    title: `${service.title} à Casablanca | ${COMPANY_NAME}`,
-    description: description.length > 160 ? description.slice(0, 157) + "..." : description,
+    title,
+    description,
     alternates: {
-      canonical: `${BASE_URL}/services/${slug}`,
+      canonical: `/services/${slug}`,
+    },
+    openGraph: {
+      title: `${service.title} à Casablanca | BOY NETTOYAGE PRO`,
+      description,
     },
   };
 }
@@ -55,51 +61,26 @@ export default async function ServicePage({ params }: PageProps) {
     serviceType: service.title,
   };
 
-  const breadcrumbSchema = {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    itemListElement: [
-      {
-        "@type": "ListItem",
-        position: 1,
-        name: "Accueil",
-        item: `${BASE_URL}/`,
-      },
-      {
-        "@type": "ListItem",
-        position: 2,
-        name: "Services",
-        item: `${BASE_URL}/services`,
-      },
-      {
-        "@type": "ListItem",
-        position: 3,
-        name: service.title,
-        item: `${BASE_URL}/services/${slug}`,
-      },
-    ],
-  };
-
-  const faqSchema = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    mainEntity: service.faq.map((item) => ({
-      "@type": "Question",
-      name: item.q,
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: item.a,
-      },
-    })),
-  };
-
   return (
     <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify([serviceSchema, breadcrumbSchema, faqSchema]),
+          __html: JSON.stringify(serviceSchema),
         }}
+      />
+      <BreadcrumbSchema
+        items={[
+          { name: "Accueil", url: `${BASE_URL}/` },
+          { name: "Services", url: `${BASE_URL}/services` },
+          { name: service.title, url: `${BASE_URL}/services/${slug}` },
+        ]}
+      />
+      <FAQSchema
+        faqs={service.faq.map((item) => ({
+          question: item.q,
+          answer: item.a,
+        }))}
       />
       <ServiceDetailPageContent slug={slug} />
     </>

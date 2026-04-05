@@ -21,7 +21,7 @@ export default function AboutHeader() {
   ];
 
   const stats = [
-    { value: "+150", label: "CLIENTS" },
+    { value: "500+", label: "CLIENTS" },
     { value: "24/7", label: "SUPPORT" },
     { value: "100%", label: "SÉCURITÉ" },
   ];
