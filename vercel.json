@@ -2,6 +2,12 @@
   "redirects": [
     {
       "source": "/(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "boynettoyage.ma"
+        }
+      ],
       "destination": "https://www.boynettoyage.ma/$1",
       "permanent": true
     }
