@@ -1,0 +1,9 @@
+{
+  "redirects": [
+    {
+      "source": "/(.*)",
+      "destination": "https://www.boynettoyage.ma/$1",
+      "permanent": true
+    }
+  ]
+}

@@ -47,7 +47,7 @@ export default function Footer() {
               <Link href="/">
                 <Image
                   src="/logo.png"
-                  alt={COMPANY_NAME}
+                  alt="BOY NETTOYAGE PRO - Logo"
                   width={140}
                   height={52}
                   className="h-14 w-auto object-contain brightness-0 invert"

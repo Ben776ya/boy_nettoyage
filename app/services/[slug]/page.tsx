@@ -8,7 +8,7 @@ interface PageProps {
   params: Promise<{ slug: string }>;
 }
 
-const BASE_URL = "https://boynettoyagepro.ma";
+const BASE_URL = "https://www.boynettoyage.ma";
 
 export async function generateStaticParams() {
   return SERVICES_DETAIL.map((service) => ({ slug: service.slug }));
@@ -19,11 +19,13 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const service = getServiceBySlug(slug);
   if (!service) return {};
 
+  const description = `${service.title} à Casablanca par ${COMPANY_NAME}. ${service.description} Devis gratuit 24h/24. Appelez le 0661 408 577.`;
+
   return {
-    title: `${service.title} | ${COMPANY_NAME} - Nettoyage Professionnel au Maroc`,
-    description: service.description,
+    title: `${service.title} à Casablanca | ${COMPANY_NAME}`,
+    description: description.length > 160 ? description.slice(0, 157) + "..." : description,
     alternates: {
-      canonical: `/services/${slug}`,
+      canonical: `${BASE_URL}/services/${slug}`,
     },
   };
 }
@@ -42,11 +44,13 @@ export default async function ServicePage({ params }: PageProps) {
     description: service.description,
     url: `${BASE_URL}/services/${slug}`,
     provider: {
-      "@id": `${BASE_URL}/#business`,
+      "@type": "LocalBusiness",
+      name: "BOY NETTOYAGE PRO",
+      url: BASE_URL,
     },
     areaServed: {
-      "@type": "Country",
-      name: "Maroc",
+      "@type": "City",
+      name: "Casablanca",
     },
     serviceType: service.title,
   };
@@ -76,12 +80,25 @@ export default async function ServicePage({ params }: PageProps) {
     ],
   };
 
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: service.faq.map((item) => ({
+      "@type": "Question",
+      name: item.q,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: item.a,
+      },
+    })),
+  };
+
   return (
     <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify([serviceSchema, breadcrumbSchema]),
+          __html: JSON.stringify([serviceSchema, breadcrumbSchema, faqSchema]),
         }}
       />
       <ServiceDetailPageContent slug={slug} />

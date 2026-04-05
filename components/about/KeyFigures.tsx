@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { User, Users, CheckCircle, Clock, ArrowRight, TrendingUp } from "lucide-react";
 import ScrollReveal from "../ScrollReveal";
 import { YEARS_EXPERIENCE } from "@/lib/utils";
@@ -96,13 +97,13 @@ export default function KeyFigures() {
                 </div>
 
                 {/* CTA Button */}
-                <a
+                <Link
                   href="/#devis"
                   className="flex items-center justify-center gap-2 w-full py-4 rounded-xl bg-bright-blue text-white font-semibold shadow-lg shadow-bright-blue/30 hover:shadow-xl hover:shadow-bright-blue/40 transition-all duration-300 hover:-translate-y-0.5 btn-shine group"
                 >
                   Demander un devis
                   <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-                </a>
+                </Link>
               </div>
             </ScrollReveal>
           </div>

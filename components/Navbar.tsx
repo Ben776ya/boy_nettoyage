@@ -54,7 +54,7 @@ export default function Navbar() {
           <Link href="/" className="flex items-center group">
             <Image
               src="/logo.png"
-              alt="BOY NETTOYAGE PRO"
+              alt="BOY NETTOYAGE PRO - Logo"
               width={300}
               height={90}
               className="h-14 sm:h-16 md:h-16 lg:h-[90px] w-auto object-contain group-hover:scale-105 transition-transform duration-300"
@@ -85,13 +85,13 @@ export default function Navbar() {
               <Phone className="w-4 h-4 group-hover:animate-bounce-gentle" />
               <span className="hidden lg:inline">{PHONE_MAIN}</span>
             </a>
-            <a
+            <Link
               href="/#devis"
               className="flex items-center gap-2 px-5 py-2.5 rounded-full bg-gradient-to-r from-green-cta to-emerald-600 text-white text-sm font-medium shadow-lg shadow-green-cta/30 hover:shadow-xl hover:shadow-green-cta/40 transition-all duration-300 hover:-translate-y-0.5 btn-shine"
             >
               Devis gratuit
               <ArrowRight className="w-4 h-4" />
-            </a>
+            </Link>
           </div>
 
           {/* Mobile Menu Button */}
@@ -139,14 +139,14 @@ export default function Navbar() {
               </Link>
             ))}
             <div className="px-4 py-3">
-              <a
+              <Link
                 href="/#devis"
                 onClick={() => setIsMobileMenuOpen(false)}
                 className="flex items-center justify-center gap-2 w-full px-5 py-3 rounded-full bg-gradient-to-r from-green-cta to-emerald-600 text-white text-sm font-medium shadow-lg"
               >
                 Devis gratuit
                 <ArrowRight className="w-4 h-4" />
-              </a>
+              </Link>
             </div>
           </nav>
         </div>

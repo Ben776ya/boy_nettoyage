@@ -1,7 +1,7 @@
-import { MetadataRoute } from "next";
+  import { MetadataRoute } from "next";
 import { SERVICES_DETAIL } from "@/lib/services-detail-data";
 
-const BASE_URL = "https://boynettoyagepro.ma";
+const BASE_URL = "https://www.boynettoyage.ma";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const serviceUrls = SERVICES_DETAIL.map((service) => ({
@@ -28,7 +28,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: `${BASE_URL}/qui-sommes-nous`,
       lastModified: new Date(),
       changeFrequency: "monthly",
-      priority: 0.6,
+      priority: 0.7,
     },
     ...serviceUrls,
   ];

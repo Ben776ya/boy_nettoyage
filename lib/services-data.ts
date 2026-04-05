@@ -4,7 +4,6 @@ import {
   Gem,
   Hotel,
   Store,
-  Users,
   CalendarDays,
   UtensilsCrossed,
   ExternalLink,

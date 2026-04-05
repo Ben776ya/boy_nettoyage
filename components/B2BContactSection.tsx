@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import {
   Phone,
   Clock,
@@ -241,13 +242,13 @@ export default function B2BContactSection() {
                 Remplissez notre formulaire en ligne pour un chiffrage précis et détaillé.
               </p>
             </div>
-            <a
+            <Link
               href="/#devis"
               className="relative inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full bg-white text-bright-blue font-semibold hover:bg-blue-50 transition-all duration-300 hover:shadow-xl whitespace-nowrap group"
             >
               Demander un devis
               <ArrowUpRight className="w-5 h-5 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
-            </a>
+            </Link>
           </div>
         </ScrollReveal>
 

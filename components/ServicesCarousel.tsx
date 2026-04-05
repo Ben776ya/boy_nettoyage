@@ -109,13 +109,15 @@ export default function ServicesCarousel() {
                     src={service.image}
                     alt=""
                     fill
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                     className="object-cover scale-110 blur-md opacity-60"
                     aria-hidden="true"
                   />
                   <Image
                     src={service.image}
-                    alt={service.title}
+                    alt={`${service.title} professionnel à Casablanca`}
                     fill
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                     className="object-contain group-hover:scale-110 transition-transform duration-700 relative"
                   />
                   <div className={`absolute inset-0 bg-gradient-to-t ${service.color} opacity-60 mix-blend-multiply`}></div>
@@ -153,13 +155,13 @@ export default function ServicesCarousel() {
                   </ul>
 
                   {/* CTA Button */}
-                  <a
+                  <Link
                     href="/#devis"
                     className={`group/btn w-full py-3 rounded-xl bg-gradient-to-r ${service.color} text-white text-sm font-semibold shadow-lg hover:shadow-xl transition-all duration-300 flex items-center justify-center gap-2 btn-shine cursor-pointer`}
                   >
                     Demander un devis
                     <ArrowRight className="w-4 h-4 group-hover/btn:translate-x-1 transition-transform" />
-                  </a>
+                  </Link>
                 </div>
               </div>
             ))}

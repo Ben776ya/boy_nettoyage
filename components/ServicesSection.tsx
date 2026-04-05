@@ -7,7 +7,6 @@ import {
   Factory,
   Hotel,
   Sparkles,
-  Shield,
   Users,
   Wrench,
   ArrowRight,
@@ -208,7 +207,7 @@ export default function ServicesSection() {
                 <div className="relative h-48 overflow-hidden">
                   <Image
                     src={service.image}
-                    alt={service.title}
+                    alt={`${service.title} professionnel à Casablanca`}
                     fill
                     className="object-cover group-hover:scale-110 transition-transform duration-700"
                   />

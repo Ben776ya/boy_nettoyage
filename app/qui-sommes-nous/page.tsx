@@ -7,9 +7,12 @@ import AboutCTA from "@/components/about/AboutCTA";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Qui sommes nous ? | BOY NETTOYAGE PRO - Expert Nettoyage à Casablanca",
+  title: "Qui Sommes Nous — BOY NETTOYAGE PRO Casablanca",
   description:
-    "Découvrez BOY NETTOYAGE PRO, votre partenaire de confiance pour tous vos besoins en nettoyage et hygiène à Casablanca et au Maroc. Équipe qualifiée, produits premium, disponibilité 24/7.",
+    "Fondée en 2016, BOY NETTOYAGE PRO est une entreprise de nettoyage professionnel à Casablanca. Personnel qualifié, produits premium, disponible 24h/24 partout au Maroc.",
+  alternates: {
+    canonical: "https://www.boynettoyage.ma/qui-sommes-nous",
+  },
 };
 
 export default function QuiSommesNousPage() {

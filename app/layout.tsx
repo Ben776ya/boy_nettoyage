@@ -16,37 +16,34 @@ export const viewport: Viewport = {
   initialScale: 1,
 };
 
-const BASE_URL = "https://boynettoyagepro.ma";
+const BASE_URL = "https://www.boynettoyage.ma";
 
 export const metadata: Metadata = {
   metadataBase: new URL(BASE_URL),
-  title: "BOY NETTOYAGE PRO | Nettoyage & Hygiène Professionnelle à Casablanca",
+  title: {
+    default: "BOY NETTOYAGE PRO | Nettoyage & Hygiène Professionnelle à Casablanca",
+    template: "%s | BOY NETTOYAGE PRO",
+  },
   description:
-    "BOY NETTOYAGE PRO - La propreté au service de votre confort et de votre image. Services premium de nettoyage pour particuliers et professionnels : villas, bureaux, industrie, hôtels, fin de chantier, dératisation. Casablanca et tout le Maroc. Disponible 24/7.",
+    "Services de nettoyage professionnel à Casablanca depuis 2016. Villas, bureaux, hôtels, dératisation, cristallisation marbre. Devis gratuit sous 24h.",
   keywords: [
-    "nettoyage",
-    "Maroc",
-    "Casablanca",
-    "nettoyage professionnel",
-    "nettoyage villas",
-    "nettoyage bureaux",
-    "nettoyage industriel",
-    "fin de chantier",
-    "dératisation",
-    "désinsectisation",
-    "nettoyage hôtels",
-    "cristallisation marbre",
-    "hygiène professionnelle",
-    "Boy Nettoyage Pro",
+    "nettoyage professionnel Casablanca",
+    "nettoyage appartement Casablanca",
+    "nettoyage bureaux Casablanca",
+    "dératisation Casablanca",
+    "cristallisation marbre Casablanca",
   ],
   authors: [{ name: "BOY NETTOYAGE PRO" }],
+  creator: "BOY NETTOYAGE PRO",
+  publisher: "BOY NETTOYAGE PRO",
+  formatDetection: { telephone: true, email: true, address: true },
   alternates: {
-    canonical: "/",
+    canonical: BASE_URL,
   },
   openGraph: {
-    title: "BOY NETTOYAGE PRO | Nettoyage & Hygiène Professionnelle",
+    title: "BOY NETTOYAGE PRO | Nettoyage Professionnel à Casablanca",
     description:
-      "La propreté au service de votre confort et de votre image. Services premium de nettoyage à Casablanca et tout le Maroc.",
+      "Services de nettoyage et hygiène professionnelle à Casablanca depuis 2016.",
     url: BASE_URL,
     siteName: "BOY NETTOYAGE PRO",
     locale: "fr_MA",
@@ -62,14 +59,21 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "BOY NETTOYAGE PRO | Nettoyage & Hygiène Professionnelle",
+    title: "BOY NETTOYAGE PRO | Nettoyage Professionnel à Casablanca",
     description:
-      "Services premium de nettoyage professionnel à Casablanca et tout le Maroc. Disponible 24/7.",
+      "Services de nettoyage et hygiène professionnelle à Casablanca.",
     images: ["/og-image.jpg"],
   },
   robots: {
     index: true,
     follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
   },
 };
 
@@ -99,7 +103,7 @@ const localBusinessSchema = {
   geo: {
     "@type": "GeoCoordinates",
     latitude: 33.5731,
-    longitude: -7.5898,
+    longitude: -7.6298,
   },
   areaServed: [
     { "@type": "City", name: "Casablanca" },
@@ -125,17 +129,20 @@ const localBusinessSchema = {
       closes: "23:59",
     },
   ],
-  aggregateRating: {
-    "@type": "AggregateRating",
-    ratingValue: "5",
-    bestRating: "5",
-    worstRating: "1",
-    reviewCount: "20000",
-  },
   slogan: "La propreté au service de votre confort et de votre image",
   priceRange: "MAD",
   foundingDate: "2016",
+  hasMap: "https://maps.google.com/?q=30+rue+Abou+Ishak+Chirazi+Maarif+Casablanca",
+  currenciesAccepted: "MAD",
+  paymentAccepted: "Cash, Virement bancaire",
   sameAs: ["https://wa.me/212661408577"],
+  contactPoint: {
+    "@type": "ContactPoint",
+    telephone: "+212661408577",
+    contactType: "customer service",
+    availableLanguage: ["French", "Arabic"],
+    areaServed: "MA",
+  },
 };
 
 const websiteSchema = {

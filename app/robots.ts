@@ -6,13 +6,10 @@ export default function robots(): MetadataRoute.Robots {
       {
         userAgent: "*",
         allow: "/",
-        disallow: ["/admin", "/admin/"],
-      },
-      {
-        userAgent: "CCBot",
-        disallow: "/",
+        disallow: ["/admin", "/admin/", "/api/", "/_next/"],
       },
     ],
-    sitemap: "https://boynettoyagepro.ma/sitemap.xml",
+    sitemap: "https://www.boynettoyage.ma/sitemap.xml",
+    host: "https://www.boynettoyage.ma",
   };
 }

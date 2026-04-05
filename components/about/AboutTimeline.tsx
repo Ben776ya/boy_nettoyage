@@ -1,6 +1,6 @@
 "use client";
 
-import { Rocket, Target, Award, Users, CheckCircle, Calendar } from "lucide-react";
+import { Rocket, Target, Award, Calendar } from "lucide-react";
 import { COMPANY_NAME } from "@/lib/utils";
 import ScrollReveal from "../ScrollReveal";
 

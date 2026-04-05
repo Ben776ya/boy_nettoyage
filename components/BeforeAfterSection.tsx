@@ -117,6 +117,7 @@ function ComparisonCard({ item }: { item: ComparisonItem }) {
             src={item.beforeImage}
             alt={`${item.title} - Avant`}
             fill
+            sizes="(max-width: 768px) 100vw, 50vw"
             className="object-cover"
           />
           {/* Before badge */}
@@ -136,6 +137,7 @@ function ComparisonCard({ item }: { item: ComparisonItem }) {
             src={item.afterImage}
             alt={`${item.title} - Après`}
             fill
+            sizes="(max-width: 768px) 100vw, 50vw"
             className="object-cover"
           />
           {/* After badge */}

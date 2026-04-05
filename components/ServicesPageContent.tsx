@@ -38,7 +38,7 @@ export default function ServicesPageContent() {
 
               {/* Title */}
               <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-primary-navy mb-4">
-                Nos Services
+                Services de nettoyage professionnel à Casablanca et partout au Maroc
               </h1>
 
               {/* Subtitle */}
@@ -70,13 +70,15 @@ export default function ServicesPageContent() {
                       src={service.image}
                       alt=""
                       fill
+                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                       className="object-cover scale-110 blur-md opacity-60"
                       aria-hidden="true"
                     />
                     <Image
                       src={service.image}
-                      alt={service.title}
+                      alt={`${service.title} professionnel à Casablanca`}
                       fill
+                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                       className="object-contain group-hover:scale-110 transition-transform duration-700 relative"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-[#064e3b]/70 to-[#0D7377]/30 opacity-70 mix-blend-multiply"></div>
@@ -145,13 +147,13 @@ export default function ServicesPageContent() {
               <p className="text-white/80 text-lg max-w-2xl mx-auto mb-10">
                 Contactez-nous pour un devis personnalisé adapté à vos besoins spécifiques.
               </p>
-              <a
+              <Link
                 href="/#devis"
                 className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full bg-white text-primary-navy font-bold shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-1 group"
               >
                 Demander un devis gratuit
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-              </a>
+              </Link>
             </div>
           </ScrollReveal>
         </div>

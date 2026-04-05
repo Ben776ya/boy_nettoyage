@@ -1,7 +1,7 @@
 "use client";
 
 import { Star, Quote, MapPin } from "lucide-react";
-import { TESTIMONIALS, COMPANY_NAME } from "@/lib/utils";
+import { TESTIMONIALS } from "@/lib/utils";
 import ScrollReveal from "./ScrollReveal";
 
 export default function TestimonialsSection() {
@@ -94,7 +94,7 @@ export default function TestimonialsSection() {
               <div className="h-8 w-px bg-border"></div>
               <div className="text-left">
                 <p className="font-bold text-primary-navy">Note moyenne 5/5</p>
-                <p className="text-sm text-text-gray">Basée sur +20 000 clients</p>
+                <p className="text-sm text-text-gray">Satisfaction client garantie</p>
               </div>
             </div>
           </div>

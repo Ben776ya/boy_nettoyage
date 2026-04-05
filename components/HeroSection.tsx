@@ -40,7 +40,7 @@ export default function HeroSection() {
               {/* Main Heading */}
               <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-primary-navy leading-[1.1] mb-5 text-shadow">
                 <span className="relative inline-block">
-                  <span className="gradient-text-animated">Propreté</span>
+                  <span className="gradient-text-animated">Nettoyage</span>
                   <svg className="absolute -bottom-1 left-0 w-full" viewBox="0 0 200 12" fill="none">
                     <path d="M2 8C50 2 150 2 198 8" stroke="url(#gradient)" strokeWidth="4" strokeLinecap="round"/>
                     <defs>
@@ -51,9 +51,9 @@ export default function HeroSection() {
                     </defs>
                   </svg>
                 </span>
-                {" "}& Hygiène
+                {" "}professionnel à Casablanca
                 <br />
-                <span className="text-primary-teal">Professionnelle</span>
+                <span className="text-primary-teal">— BOY NETTOYAGE PRO</span>
               </h1>
 
               {/* Tagline */}
@@ -113,6 +113,7 @@ export default function HeroSection() {
                     src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=800&h=600&fit=crop"
                     alt="Équipe BOY NETTOYAGE PRO - Services de nettoyage professionnel"
                     fill
+                    sizes="100vw"
                     className="object-cover"
                     priority
                   />
@@ -138,9 +139,10 @@ export default function HeroSection() {
                         <Image
                           key={i}
                           src={src}
-                          alt="Client satisfait"
+                          alt="Client satisfait BOY NETTOYAGE PRO"
                           width={28}
                           height={28}
+                          sizes="48px"
                           className="w-6 h-6 sm:w-8 sm:h-8 rounded-full border-2 border-white object-cover"
                         />
                       ))}

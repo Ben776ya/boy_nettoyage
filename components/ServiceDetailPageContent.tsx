@@ -69,7 +69,7 @@ export default function ServiceDetailPageContent({
 
               {/* H1 */}
               <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-5 leading-tight">
-                {service.title}
+                {service.title} à Casablanca — BOY NETTOYAGE PRO
               </h1>
 
               {/* Intro paragraph */}
@@ -102,8 +102,9 @@ export default function ServiceDetailPageContent({
               <div className="relative w-full aspect-[16/10] rounded-2xl overflow-hidden shadow-2xl shadow-black/30">
                 <Image
                   src={service.image}
-                  alt={service.title}
+                  alt={`${service.title} professionnel à Casablanca`}
                   fill
+                  sizes="(max-width: 1024px) 100vw, 420px"
                   className="object-cover"
                   priority
                 />

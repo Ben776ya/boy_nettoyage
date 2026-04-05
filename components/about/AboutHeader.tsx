@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { ArrowRight, MessageCircle, CheckCircle, Building2, FileText } from "lucide-react";
 import { PHONE_MAIN, COMPANY_NAME, WHATSAPP_URL } from "@/lib/utils";
 import ScrollReveal from "../ScrollReveal";
@@ -71,13 +72,13 @@ export default function AboutHeader() {
 
               {/* Buttons */}
               <div className="flex flex-col sm:flex-row gap-4">
-                <a
+                <Link
                   href="/#devis"
                   className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full bg-bright-blue text-white font-semibold shadow-lg shadow-bright-blue/30 hover:shadow-xl hover:shadow-bright-blue/40 transition-all duration-300 hover:-translate-y-0.5 btn-shine group"
                 >
                   Demander un devis
                   <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-                </a>
+                </Link>
                 <a
                   href={WHATSAPP_URL}
                   target="_blank"
