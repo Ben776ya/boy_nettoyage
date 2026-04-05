@@ -1,5 +1,6 @@
-  import { MetadataRoute } from "next";
+import { MetadataRoute } from "next";
 import { SERVICES_DETAIL } from "@/lib/services-detail-data";
+import { CITY_PAGES } from "@/lib/city-data";
 
 const BASE_URL = "https://www.boynettoyage.ma";
 
@@ -9,6 +10,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     lastModified: new Date(),
     changeFrequency: "monthly" as const,
     priority: 0.8,
+  }));
+
+  const cityUrls = CITY_PAGES.map((city) => ({
+    url: `${BASE_URL}/${city.slug}`,
+    lastModified: new Date(),
+    changeFrequency: "monthly" as const,
+    priority: city.slug === "nettoyage-casablanca" ? 0.9 : 0.8,
   }));
 
   return [
@@ -31,5 +39,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.7,
     },
     ...serviceUrls,
+    ...cityUrls,
   ];
 }

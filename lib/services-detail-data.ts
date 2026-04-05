@@ -31,11 +31,20 @@ export interface ServiceFAQ {
   a: string;
 }
 
+export interface ProcessStep {
+  step: number;
+  title: string;
+  description: string;
+}
+
 export interface ServiceDetail {
   slug: string;
   title: string;
   description: string;
   intro: string;
+  longDescription?: string;
+  process?: ProcessStep[];
+  pricing?: string;
   prestations: string[];
   clients: string;
   coverage: string;
@@ -48,11 +57,20 @@ export interface ServiceDetail {
 export const SERVICES_DETAIL: ServiceDetail[] = [
   {
     slug: "nettoyage-de-chantier",
-    title: "Nettoyage de chantier",
+    title: "Nettoyage de Fin de Chantier à Casablanca",
     description:
       "Remise en état parfaite après chantier pour une livraison impeccable de vos espaces.",
     intro:
       "Votre chantier est terminé et vous avez besoin d'une remise en état impeccable ? BOY NETTOYAGE PRO intervient pour un nettoyage fin de chantier professionnel, afin de livrer des espaces propres et prêts à l'usage.",
+    longDescription:
+      "La livraison d'un chantier exige une remise en état impeccable. BOY NETTOYAGE PRO intervient après tous types de travaux — construction neuve, rénovation, peinture ou aménagement — pour une livraison dans un état parfait. Nous travaillons avec promoteurs immobiliers, entrepreneurs et particuliers dans toute la région de Casablanca et à travers le Maroc.",
+    process: [
+      { step: 1, title: "Visite technique", description: "Évaluation de l'état du chantier, identification des surfaces à traiter et estimation du temps d'intervention." },
+      { step: 2, title: "Dépoussiérage structurel", description: "Élimination de la poussière de chantier sur tous les plafonds, murs, boiseries et surfaces." },
+      { step: 3, title: "Nettoyage des sols et vitres", description: "Décapage et nettoyage des sols (carrelage, marbre, béton), lavage complet des vitres et menuiseries." },
+      { step: 4, title: "Finitions et livraison", description: "Élimination des résidus de colle, plâtre et peinture. Contrôle qualité final avant remise des clés." },
+    ],
+    pricing: "À partir de 500 MAD pour un appartement. Tarifs dégressifs pour volumes importants.",
     prestations: [
       "Dépoussiérage complet des surfaces, plafonds et murs",
       "Nettoyage des sols (carrelage, béton, parquet) après travaux",
@@ -74,16 +92,24 @@ export const SERVICES_DETAIL: ServiceDetail[] = [
     ],
     faq: [
       {
-        q: "Quand intervenir pour un nettoyage fin de chantier ?",
-        a: "Nous intervenons dès la fin des travaux, avant la livraison ou la réception des locaux. Nous pouvons aussi intervenir entre les phases de chantier.",
-      },
-      {
-        q: "Nettoyez-vous aussi les façades extérieures après chantier ?",
-        a: "Oui, nous proposons le nettoyage des façades, vitres extérieures et espaces communs dans le cadre de la remise en état post-chantier.",
-      },
-      {
         q: "Combien de temps dure un nettoyage de chantier ?",
-        a: "Cela dépend de la superficie et du type de travaux réalisés. Nous fournissons une estimation précise après visite des lieux.",
+        a: "Selon la superficie, une intervention dure entre 4h pour un appartement et plusieurs jours pour un immeuble complet. Nous établissons un planning précis lors de la visite technique.",
+      },
+      {
+        q: "Enlevez-vous les résidus de peinture et de colle ?",
+        a: "Oui, nous utilisons des produits et techniques spécialisés pour éliminer les résidus de peinture, colle, plâtre et ciment sur toutes les surfaces sans les endommager.",
+      },
+      {
+        q: "Intervenez-vous sur des immeubles entiers ?",
+        a: "Oui, nous gérons des chantiers de toutes tailles, d'un appartement à un immeuble complet ou un complexe résidentiel.",
+      },
+      {
+        q: "Travaillez-vous avec les promoteurs immobiliers ?",
+        a: "Oui, nous avons des partenariats avec plusieurs promoteurs à Casablanca et proposons des tarifs adaptés aux livraisons en volume.",
+      },
+      {
+        q: "Nettoyez-vous aussi après une rénovation partielle ?",
+        a: "Absolument, nous intervenons après tous types de travaux : peinture, carrelage, plomberie, menuiserie ou rénovation complète.",
       },
     ],
     icon: HardHat,
@@ -268,11 +294,20 @@ export const SERVICES_DETAIL: ServiceDetail[] = [
   },
   {
     slug: "nettoyage-bureaux",
-    title: "Nettoyage Bureaux",
+    title: "Nettoyage Bureaux & Espaces Professionnels à Casablanca",
     description:
       "Services complets pour espaces professionnels, magasins et entrepôts. Hygiène & Sécurité.",
     intro:
       "Un environnement de travail propre booste la productivité et renforce votre image professionnelle. BOY NETTOYAGE PRO assure l'entretien régulier de vos bureaux, locaux commerciaux et espaces de travail.",
+    longDescription:
+      "Un environnement de travail propre améliore la productivité et l'image de votre entreprise. BOY NETTOYAGE PRO assure l'entretien complet de vos bureaux, open spaces, salles de réunion et espaces communs à Casablanca et partout au Maroc. Nos interventions se font en dehors de vos heures de travail pour ne pas perturber votre activité.",
+    process: [
+      { step: 1, title: "Audit de vos locaux", description: "Nous évaluons la superficie, la fréquentation et vos exigences spécifiques pour établir un plan d'entretien sur mesure." },
+      { step: 2, title: "Contrat d'entretien", description: "Nous proposons des contrats hebdomadaires, bimensuels ou mensuels selon vos besoins." },
+      { step: 3, title: "Intervention hors horaires", description: "Nos équipes interviennent le soir, la nuit ou le week-end pour ne pas perturber votre activité." },
+      { step: 4, title: "Rapport & suivi", description: "Un rapport d'intervention est fourni après chaque passage. Un interlocuteur dédié est disponible 24h/24." },
+    ],
+    pricing: "Sur devis selon superficie et fréquence. Contrats à partir de 800 MAD/mois.",
     prestations: [
       "Nettoyage quotidien ou périodique des bureaux",
       "Dépoussiérage du mobilier, écrans et équipements",
@@ -294,16 +329,24 @@ export const SERVICES_DETAIL: ServiceDetail[] = [
     ],
     faq: [
       {
-        q: "Pouvez-vous intervenir le soir ou le week-end ?",
-        a: "Oui, nous adaptons nos horaires d'intervention pour ne pas perturber votre activité. Interventions possibles le soir, tôt le matin ou le week-end.",
+        q: "Proposez-vous des contrats d'entretien régulier ?",
+        a: "Oui, nous proposons des contrats d'entretien hebdomadaires, bimensuels ou mensuels avec un tarif préférentiel. Un interlocuteur dédié est assigné à votre compte.",
       },
       {
-        q: "Proposez-vous des contrats mensuels ?",
-        a: "Oui, nous proposons des formules d'entretien régulier avec des contrats flexibles adaptés à votre budget et à vos besoins.",
+        q: "Intervenez-vous la nuit ou le week-end ?",
+        a: "Oui, nous nous adaptons à vos horaires. La majorité de nos clients bureaux optent pour des interventions en soirée ou le week-end pour ne pas perturber leur activité.",
       },
       {
-        q: "Fournissez-vous les consommables (savon, papier) ?",
-        a: "Nous pouvons inclure la fourniture et le réapprovisionnement des consommables sanitaires dans nos prestations sur demande.",
+        q: "Fournissez-vous le matériel et les produits ?",
+        a: "Oui, nous apportons tout le matériel professionnel et les produits nécessaires. Vous n'avez rien à prévoir.",
+      },
+      {
+        q: "Pouvez-vous gérer plusieurs sites ?",
+        a: "Oui, nous gérons des contrats multi-sites pour les entreprises avec plusieurs bureaux à Casablanca ou dans d'autres villes du Maroc.",
+      },
+      {
+        q: "Émettez-vous des factures pour la comptabilité ?",
+        a: "Oui, nous émettons des factures officielles avec TVA pour chaque prestation, utilisables pour votre comptabilité.",
       },
     ],
     icon: Briefcase,
@@ -312,11 +355,20 @@ export const SERVICES_DETAIL: ServiceDetail[] = [
   },
   {
     slug: "cristallisation-marbre",
-    title: "Cristallisation du Marbre",
+    title: "Cristallisation & Polissage Marbre à Casablanca",
     description:
       "Ponçage, polissage et cristallisation professionnelle pour redonner éclat et brillance à vos sols en marbre.",
     intro:
       "Vos sols en marbre ont perdu leur brillance naturelle ? BOY NETTOYAGE PRO redonne vie et éclat à votre marbre grâce à des techniques professionnelles de ponçage, polissage et cristallisation.",
+    longDescription:
+      "Le marbre est un matériau noble qui nécessite un entretien spécialisé pour conserver son éclat. BOY NETTOYAGE PRO propose un service complet de cristallisation, polissage et traitement du marbre pour villas, hôtels, résidences et espaces commerciaux à Casablanca et dans tout le Maroc.",
+    process: [
+      { step: 1, title: "Diagnostic du sol", description: "Évaluation de l'état du marbre — rayures, taches, perte de brillance — et définition du traitement adapté." },
+      { step: 2, title: "Ponçage et préparation", description: "Ponçage progressif avec disques diamantés pour éliminer les rayures et uniformiser la surface." },
+      { step: 3, title: "Cristallisation", description: "Application du cristallisant avec monobrosse et disques en acier inoxydable pour une brillance miroir durable." },
+      { step: 4, title: "Protection et finition", description: "Application d'un traitement hydrofuge et anti-taches pour protéger le sol contre les futures agressions." },
+    ],
+    pricing: "À partir de 80 MAD/m². Devis gratuit sur mesure selon superficie et état du sol.",
     prestations: [
       "Ponçage et polissage de sols en marbre et granit",
       "Cristallisation pour une brillance durable",
@@ -337,16 +389,24 @@ export const SERVICES_DETAIL: ServiceDetail[] = [
     ],
     faq: [
       {
-        q: "Quelle est la différence entre polissage et cristallisation du marbre ?",
-        a: "Le polissage redonne de la brillance en lissant la surface, tandis que la cristallisation crée une couche protectrice chimique qui renforce la dureté et l'éclat du marbre de manière durable.",
+        q: "Quelle est la différence entre polissage et cristallisation ?",
+        a: "Le polissage élimine les rayures et redonne de la planéité au sol. La cristallisation va plus loin : elle crée une réaction chimique avec le marbre pour obtenir une brillance miroir durable, plus résistante que le simple polissage.",
       },
       {
         q: "Combien de temps dure l'effet de la cristallisation ?",
-        a: "L'effet dure généralement entre 6 mois et 1 an selon le passage et l'entretien. Nous recommandons un entretien régulier pour maintenir les résultats.",
+        a: "Avec un entretien régulier, l'effet dure 12 à 24 mois. Nous recommandons une cristallisation annuelle pour les espaces à fort passage.",
       },
       {
-        q: "Traitez-vous tous les types de marbre ?",
-        a: "Oui, nous traitons le marbre blanc, coloré, le granit et toutes les pierres naturelles avec des produits et techniques adaptés à chaque type.",
+        q: "Pouvez-vous traiter du marbre très abîmé ?",
+        a: "Oui, même les marbres très rayés ou ternes peuvent être restaurés. Nous évaluons lors de la visite technique le niveau de traitement nécessaire.",
+      },
+      {
+        q: "Intervenez-vous sur le granit et le travertin ?",
+        a: "Oui, nous traitons également le granit, le travertin, le calcaire et autres pierres naturelles avec les techniques adaptées à chaque matériau.",
+      },
+      {
+        q: "Combien de temps faut-il avant de remarcher sur le sol ?",
+        a: "Le sol peut être utilisé 2 à 4 heures après l'intervention. Pour un résultat optimal, nous recommandons d'attendre 24h avant un trafic intensif.",
       },
     ],
     icon: Gem,
@@ -529,11 +589,20 @@ export const SERVICES_DETAIL: ServiceDetail[] = [
   },
   {
     slug: "hygiene-traitement-4d",
-    title: "Hygiène Traitement 4D",
+    title: "Hygiène & Traitement 4D à Casablanca — Dératisation, Désinsectisation, Désinfection",
     description:
       "Désinfection, Dératisation, Désinsectisation et Déréptilisation avec produits homologués.",
     intro:
       "Protégez vos espaces contre les nuisibles et les risques sanitaires. BOY NETTOYAGE PRO propose un traitement 4D complet : Désinfection, Dératisation, Désinsectisation et Déréptilisation avec des produits homologués et sûrs.",
+    longDescription:
+      "Le traitement 4D (Désinfection, Dératisation, Désinsectisation, Déréptilisation) est essentiel pour garantir un environnement sain dans les habitations, bureaux, restaurants, hôpitaux et entrepôts. BOY NETTOYAGE PRO utilise des produits homologués et des techniques éprouvées pour éliminer tous les nuisibles et agents pathogènes à Casablanca et dans tout le Maroc.",
+    process: [
+      { step: 1, title: "Inspection & diagnostic", description: "Identification des espèces nuisibles, des zones d'infestation et des points d'entrée dans vos locaux." },
+      { step: 2, title: "Plan de traitement", description: "Choix des produits homologués adaptés à chaque nuisible et à votre type de local (alimentaire, médical, résidentiel)." },
+      { step: 3, title: "Intervention sécurisée", description: "Application par nos techniciens certifiés avec équipements de protection. Locaux évacués pendant le traitement si nécessaire." },
+      { step: 4, title: "Suivi & prévention", description: "Visite de contrôle après 15 jours. Recommandations pour éviter les récidives. Contrats de maintenance disponibles." },
+    ],
+    pricing: "À partir de 400 MAD pour un appartement. Tarifs spéciaux pour contrats de maintenance.",
     prestations: [
       "Désinfection complète des locaux (virus, bactéries, moisissures)",
       "Dératisation : élimination et prévention contre les rongeurs",
@@ -555,16 +624,24 @@ export const SERVICES_DETAIL: ServiceDetail[] = [
     ],
     faq: [
       {
-        q: "Les produits utilisés sont-ils dangereux pour les enfants ou animaux ?",
-        a: "Non, nous utilisons des produits homologués et sûrs. Nous vous donnerons les consignes de sécurité spécifiques à chaque traitement.",
+        q: "Les produits utilisés sont-ils dangereux pour les humains ?",
+        a: "Non, nous utilisons uniquement des produits homologués par le Ministère de la Santé marocain. Après le délai de sécurité (généralement 2 à 4 heures), les locaux peuvent être réoccupés sans risque.",
       },
       {
-        q: "Faut-il quitter les lieux pendant le traitement ?",
-        a: "Cela dépend du type de traitement. Pour certaines désinfections, une évacuation temporaire de quelques heures peut être nécessaire.",
+        q: "Combien de temps dure l'effet du traitement ?",
+        a: "Un traitement standard est efficace 3 à 6 mois. Pour les établissements à risque (restaurants, entrepôts alimentaires), nous recommandons un contrat de maintenance trimestriel.",
       },
       {
-        q: "Combien de passages sont nécessaires ?",
-        a: "En général, un à trois passages suffisent selon le niveau d'infestation. Nous assurons un suivi pour garantir l'efficacité du traitement.",
+        q: "Faut-il vider les placards et réfrigérateurs avant ?",
+        a: "Pour la désinsectisation, nous recommandons de vider les placards de cuisine. Pour la dératisation, aucune préparation particulière n'est nécessaire. Nous vous informons des précautions spécifiques à votre traitement lors de la prise de rendez-vous.",
+      },
+      {
+        q: "Intervenez-vous en urgence ?",
+        a: "Oui, nous proposons un service d'urgence 24h/24 pour les infestations sévères. Contactez-nous au +212 6 61 40 85 77 pour une intervention rapide.",
+      },
+      {
+        q: "Traitez-vous les établissements de restauration ?",
+        a: "Oui, nous avons une expertise spécifique pour les cuisines professionnelles et respectons les normes HACCP. Nous émettons un certificat de traitement utilisable lors des inspections sanitaires.",
       },
     ],
     icon: Shield,
@@ -617,11 +694,20 @@ export const SERVICES_DETAIL: ServiceDetail[] = [
   },
   {
     slug: "nettoyage-appartements-villas",
-    title: "Nettoyage appartements / maisons / villas",
+    title: "Nettoyage Appartements, Maisons & Villas à Casablanca",
     description:
       "Nettoyage complet et en profondeur de vos espaces résidentiels pour un cadre de vie sain et impeccable.",
     intro:
       "Votre appartement, maison ou villa mérite un entretien irréprochable. BOY NETTOYAGE PRO intervient pour un nettoyage complet et en profondeur de tous vos espaces résidentiels, pour un cadre de vie sain, propre et agréable.",
+    longDescription:
+      "BOY NETTOYAGE PRO intervient pour le nettoyage complet de tous vos espaces résidentiels à Casablanca et dans tout le Maroc. Que vous soyez propriétaire, locataire, ou gestionnaire de biens, notre équipe qualifiée assure un nettoyage en profondeur adapté à vos besoins.",
+    process: [
+      { step: 1, title: "Évaluation gratuite", description: "Nous évaluons vos espaces et établissons un devis personnalisé sous 24h, sans engagement." },
+      { step: 2, title: "Planification", description: "Nous convenons d'un créneau adapté à votre emploi du temps, en journée ou en soirée." },
+      { step: 3, title: "Intervention professionnelle", description: "Notre équipe arrive équipée de matériel professionnel et de produits certifiés écologiques." },
+      { step: 4, title: "Contrôle qualité", description: "Un responsable vérifie chaque pièce avant de quitter les lieux. Satisfaction garantie." },
+    ],
+    pricing: "À partir de 300 MAD pour un appartement standard. Devis gratuit personnalisé sous 24h.",
     prestations: [
       "Nettoyage complet de toutes les pièces",
       "Dépoussiérage des meubles, plafonds et surfaces",
@@ -644,15 +730,23 @@ export const SERVICES_DETAIL: ServiceDetail[] = [
     faq: [
       {
         q: "Dois-je être présent pendant le nettoyage ?",
-        a: "Non, vous pouvez nous confier vos clés en toute sécurité. Nos équipes sont formées et fiables.",
+        a: "Non, vous pouvez nous confier vos clés en toute sécurité. Nos équipes sont formées, fiables et discrètes. Nous vous remettons un rapport d'intervention à la fin de chaque prestation.",
       },
       {
         q: "Nettoyez-vous après un déménagement ?",
-        a: "Oui, nous proposons des nettoyages de fin de bail et de pré-installation pour remettre votre logement en parfait état.",
+        a: "Oui, nous proposons un service spécialisé de nettoyage post-déménagement incluant le nettoyage complet de toutes les pièces, des placards, des sanitaires et des vitres.",
       },
       {
         q: "Quelle est la fréquence recommandée ?",
-        a: "Selon vos besoins : nettoyage ponctuel, hebdomadaire ou mensuel. Nous proposons des formules d'abonnement avantageuses.",
+        a: "Pour un appartement standard, nous recommandons un nettoyage en profondeur toutes les 4 à 6 semaines. Pour les villas, un entretien bimensuel est idéal.",
+      },
+      {
+        q: "Utilisez-vous des produits dangereux ?",
+        a: "Non. Nous utilisons exclusivement des produits certifiés écologiques, sans danger pour les enfants, les animaux de compagnie et les personnes allergiques.",
+      },
+      {
+        q: "Intervenez-vous en dehors de Casablanca ?",
+        a: "Oui, nous intervenons à Casablanca, Rabat, Mohammedia, El Jadida, Marrakech et partout au Maroc sur demande.",
       },
     ],
     icon: Key,

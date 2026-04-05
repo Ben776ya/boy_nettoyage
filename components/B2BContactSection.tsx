@@ -163,6 +163,22 @@ export default function B2BContactSection() {
                     </div>
                   </div>
                 </div>
+
+                {/* Google Maps Embed */}
+                {/* TODO: Replace with actual Google Maps embed URL from Google Business Profile */}
+                <div className="mt-5 rounded-xl overflow-hidden ring-1 ring-white/10">
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3323.9!2d-7.6345!3d33.5892!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzPCsDM1JzIxLjEiTiA3wrAzOCcwNC4yIlc!5e0!3m2!1sfr!2sma!4v1234567890"
+                    width="100%"
+                    height="200"
+                    style={{ border: 0 }}
+                    allowFullScreen
+                    loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"
+                    title="BOY NETTOYAGE PRO - Localisation Casablanca"
+                    aria-label="Carte de localisation BOY NETTOYAGE PRO, Maarif Casablanca"
+                  />
+                </div>
               </div>
             </div>
           </ScrollReveal>

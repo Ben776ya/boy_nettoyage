@@ -13,6 +13,8 @@ import {
   Star,
   ChevronDown,
   ArrowRight,
+  ClipboardList,
+  Banknote,
 } from "lucide-react";
 import { SERVICES_DETAIL, getOtherServices } from "@/lib/services-detail-data";
 import ScrollReveal from "./ScrollReveal";
@@ -69,13 +71,33 @@ export default function ServiceDetailPageContent({
 
               {/* H1 */}
               <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-5 leading-tight">
-                {service.title} à Casablanca — BOY NETTOYAGE PRO
+                {/casablanca|maroc/i.test(service.title)
+                  ? service.title
+                  : `${service.title} à Casablanca`}{" "}
+                — BOY NETTOYAGE PRO
               </h1>
 
               {/* Intro paragraph */}
-              <p className="text-white/85 text-base md:text-lg leading-relaxed mb-8 max-w-xl">
+              <p className="text-white/85 text-base md:text-lg leading-relaxed mb-4 max-w-xl">
                 {service.intro}
               </p>
+
+              {/* Long description */}
+              {service.longDescription && (
+                <p className="text-white/70 text-sm md:text-base leading-relaxed mb-4 max-w-xl">
+                  {service.longDescription}
+                </p>
+              )}
+
+              {/* Pricing indicator */}
+              {service.pricing && (
+                <div className="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-white/10 backdrop-blur-sm text-white text-sm font-medium mb-8 max-w-xl">
+                  <Banknote className="w-4 h-4 flex-shrink-0 text-emerald-300" />
+                  {service.pricing}
+                </div>
+              )}
+
+              {!service.pricing && <div className="mb-4" />}
 
               {/* CTA buttons */}
               <div className="flex flex-wrap gap-3">
@@ -122,6 +144,36 @@ export default function ServiceDetailPageContent({
 
             {/* ── LEFT COLUMN (2/3) ── */}
             <div className="flex-1 min-w-0 space-y-10">
+
+              {/* 2-pre. Notre processus */}
+              {service.process && service.process.length > 0 && (
+                <ScrollReveal>
+                  <div className="bg-white rounded-2xl border border-[#E5E7EB] p-6 md:p-8 shadow-sm">
+                    <h2 className="flex items-center gap-3 text-xl font-bold text-[#1B3A5C] mb-6">
+                      <span className="flex items-center justify-center w-9 h-9 rounded-xl bg-[#0D7377]/10">
+                        <ClipboardList className="w-5 h-5 text-[#0D7377]" />
+                      </span>
+                      Notre processus
+                    </h2>
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                      {service.process.map((item, i) => (
+                        <ScrollReveal key={i} delay={i * 80}>
+                          <div className="relative flex flex-col gap-2 p-5 rounded-xl border border-[#E5E7EB] bg-[#F7F9FC] hover:border-[#0D7377]/30 hover:bg-[#0D7377]/5 transition-colors">
+                            <span className="absolute top-3 right-3 text-3xl font-black text-[#0D7377]/10">
+                              {String(item.step).padStart(2, "0")}
+                            </span>
+                            <span className="flex items-center justify-center w-8 h-8 rounded-full bg-gradient-to-br from-[#0D7377] to-[#064e3b] text-white text-sm font-bold">
+                              {item.step}
+                            </span>
+                            <span className="font-semibold text-[#1B3A5C] text-sm">{item.title}</span>
+                            <span className="text-xs text-[#6B7280] leading-relaxed">{item.description}</span>
+                          </div>
+                        </ScrollReveal>
+                      ))}
+                    </div>
+                  </div>
+                </ScrollReveal>
+              )}
 
               {/* 2a. Prestations */}
               <ScrollReveal>

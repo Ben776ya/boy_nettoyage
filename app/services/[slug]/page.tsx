@@ -4,6 +4,7 @@ import { SERVICES_DETAIL, getServiceBySlug } from "@/lib/services-detail-data";
 import ServiceDetailPageContent from "@/components/ServiceDetailPageContent";
 import FAQSchema from "@/components/seo/FAQSchema";
 import BreadcrumbSchema from "@/components/seo/BreadcrumbSchema";
+import ServiceSchema from "@/components/seo/ServiceSchema";
 
 interface PageProps {
   params: Promise<{ slug: string }>;
@@ -20,7 +21,8 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const service = getServiceBySlug(slug);
   if (!service) return {};
 
-  const title = `${service.title} à Casablanca`;
+  const hasLocation = /casablanca|maroc/i.test(service.title);
+  const title = hasLocation ? service.title : `${service.title} à Casablanca`;
   const description = `BOY NETTOYAGE PRO assure le ${service.title.toLowerCase()} professionnel à Casablanca et partout au Maroc. Équipe qualifiée, produits certifiés, devis gratuit sous 24h.`;
 
   return {
@@ -30,7 +32,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       canonical: `/services/${slug}`,
     },
     openGraph: {
-      title: `${service.title} à Casablanca | BOY NETTOYAGE PRO`,
+      title: hasLocation ? `${service.title} | BOY NETTOYAGE PRO` : `${service.title} à Casablanca | BOY NETTOYAGE PRO`,
       description,
     },
   };
@@ -42,32 +44,13 @@ export default async function ServicePage({ params }: PageProps) {
 
   if (!service) notFound();
 
-  const serviceSchema = {
-    "@context": "https://schema.org",
-    "@type": "Service",
-    "@id": `${BASE_URL}/services/${slug}#service`,
-    name: service.title,
-    description: service.description,
-    url: `${BASE_URL}/services/${slug}`,
-    provider: {
-      "@type": "LocalBusiness",
-      name: "BOY NETTOYAGE PRO",
-      url: BASE_URL,
-    },
-    areaServed: {
-      "@type": "City",
-      name: "Casablanca",
-    },
-    serviceType: service.title,
-  };
-
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify(serviceSchema),
-        }}
+      <ServiceSchema
+        name={service.title}
+        description={service.description}
+        url={`${BASE_URL}/services/${slug}`}
+        price={service.pricing}
       />
       <BreadcrumbSchema
         items={[
