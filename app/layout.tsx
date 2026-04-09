@@ -91,7 +91,7 @@ const localBusinessSchema = {
     url: `${BASE_URL}/logo.png`,
   },
   telephone: ["+212661408577", "+212661538507", "+212522980621"],
-  email: "boynettoyagepro@gmail.com",
+  email: "contact@boynettoyage.ma",
   address: {
     "@type": "PostalAddress",
     streetAddress: "30 rue Abou Ishak Chirazi, Etage 2",
