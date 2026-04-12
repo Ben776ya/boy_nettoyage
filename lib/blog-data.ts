@@ -399,6 +399,254 @@ export const BLOG_POSTS: BlogPost[] = [
 
 <p>Votre sol en marbre m\u00e9rite de retrouver tout son \u00e9clat. <strong>BOY NETTOYAGE PRO</strong> r\u00e9alise la cristallisation de marbre \u00e0 Casablanca depuis 2016, avec du mat\u00e9riel professionnel et des techniciens exp\u00e9riment\u00e9s. Demandez un diagnostic gratuit \u00e0 domicile et d\u00e9couvrez ce que la cristallisation peut faire pour vos sols.</p>`,
   },
+
+  // ────────────────────────────────────────────────
+  // ARTICLE 6 — Choisir une société de nettoyage à Casablanca
+  // ────────────────────────────────────────────────
+  {
+    slug: "comment-choisir-societe-nettoyage-casablanca",
+    title: "Comment Choisir une Société de Nettoyage à Casablanca : Guide Complet 2026",
+    metaTitle: "Choisir Société de Nettoyage Casablanca 2026 | Guide & Conseils",
+    metaDescription:
+      "Comment trouver la meilleure société de nettoyage à Casablanca ? Critères de sélection, questions à poser, pièges à éviter. Guide complet pour particuliers et entreprises.",
+    publishedAt: "2026-04-01",
+    category: "conseils-nettoyage",
+    readingTime: 6,
+    coverImage: "/services/Nettoyage Bureaux.png",
+    excerpt:
+      "Vous cherchez une société de nettoyage professionnelle à Casablanca mais ne savez pas comment faire le bon choix ? Prix, fiabilité, qualité... Ce guide vous donne les critères essentiels pour sélectionner le bon prestataire.",
+    tags: ["société de nettoyage casablanca", "choisir prestataire", "nettoyage professionnel", "Casablanca"],
+    relatedServices: ["nettoyage-bureaux", "nettoyage-appartements-villas"],
+    content: `<p>Casablanca compte des dizaines de sociétés de nettoyage, des grandes entreprises aux prestataires indépendants. Alors comment s'assurer de faire le bon choix ? Entre les prix cassés qui cachent un travail bâclé et les promesses non tenues, il est facile de se retrouver déçu. Ce guide vous donne les critères clés pour identifier une société de nettoyage sérieuse et professionnelle à Casablanca.</p>
+
+<img src="/services/Nettoyage Bureaux.png" alt="Nettoyage de bureaux professionnel à Casablanca" style="width:100%;border-radius:12px;margin:24px 0;" />
+
+<h2>1. Vérifiez l'expérience et les références</h2>
+<p>Une société de nettoyage sérieuse peut justifier de plusieurs années d'activité et vous fournir des références clients vérifiables. Demandez :</p>
+<ul>
+<li><strong>Depuis combien d'années l'entreprise est-elle active ?</strong> Une société qui opère depuis plus de 3 ans a prouvé sa viabilité sur le marché casablancais.</li>
+<li><strong>Des références clients</strong> : témoignages, avis Google, photos de chantiers réalisés. Une société qui refuse de vous montrer ses réalisations est un signal d'alarme.</li>
+<li><strong>Des certifications ou partenariats</strong> : certaines sociétés sérieuses disposent de certifications de qualité ou de contrats avec des entreprises reconnues (hôtels, cliniques, syndics de copropriété).</li>
+</ul>
+
+<h2>2. Exigez un devis détaillé et transparent</h2>
+<p>Un devis vague est souvent le signe d'un prestataire peu fiable. Le devis doit impérativement mentionner :</p>
+<ul>
+<li>La liste précise des prestations incluses, pièce par pièce</li>
+<li>Les produits et matériel utilisés</li>
+<li>Le nombre d'agents intervenant et la durée estimée</li>
+<li>Le prix total TTC, sans frais cachés</li>
+<li>Les conditions d'annulation et de garantie</li>
+</ul>
+<p>Méfiez-vous des devis "tout compris" sans détails : vous risquez d'avoir des surprises le jour de l'intervention.</p>
+
+<img src="/services/Nettoyage appartements.png" alt="Nettoyage appartement professionnel Casablanca" style="width:100%;border-radius:12px;margin:24px 0;" />
+
+<h2>3. Vérifiez les produits et le matériel</h2>
+<p>Le matériel utilisé fait toute la différence entre un nettoyage superficiel et un nettoyage en profondeur. Une société professionnelle dispose de :</p>
+<ul>
+<li><strong>Aspirateurs industriels</strong> avec filtres HEPA pour capter les allergènes</li>
+<li><strong>Autolaveuses et monobrosse</strong> pour les grandes surfaces</li>
+<li><strong>Produits certifiés</strong> adaptés à chaque type de surface (marbre, carrelage, parquet, inox...)</li>
+<li><strong>Équipement de protection</strong> pour les agents (gants, masques, tenues adaptées)</li>
+</ul>
+<p>Demandez si la société fournit ses propres produits ou si elle vous demande d'en acheter — un prestataire sérieux arrive avec tout son matériel.</p>
+
+<h2>4. Renseignez-vous sur la formation du personnel</h2>
+<p>Le personnel est le cœur du service. Quelques questions à poser :</p>
+<ul>
+<li>Les agents sont-ils formés aux techniques de nettoyage professionnel ?</li>
+<li>Sont-ils encadrés par un chef d'équipe ?</li>
+<li>La société effectue-t-elle des contrôles qualité après les interventions ?</li>
+</ul>
+<p>Une société qui investit dans la formation de ses équipes vous livrera un travail constant et de qualité, intervention après intervention.</p>
+
+<h2>5. Assurez-vous que la société est assurée</h2>
+<p>C'est un critère non négociable. Une société de nettoyage professionnelle doit disposer d'une <strong>assurance responsabilité civile professionnelle</strong> qui couvre les dommages éventuels causés lors de l'intervention : objet cassé, sol abîmé, dégât des eaux. Demandez une attestation d'assurance avant de signer tout contrat.</p>
+
+<h2>6. Testez la réactivité et le service client</h2>
+<p>Avant de vous engager, évaluez la réactivité de la société. Répond-elle rapidement à vos messages ? Vous rappelle-t-elle dans la journée ? Une société qui met plusieurs jours à vous répondre pour un simple devis sera probablement aussi peu réactive en cas de problème.</p>
+<p>Vérifiez également la présence d'un interlocuteur dédié — une société sérieuse vous attribue un contact direct, pas un numéro de standard impersonnel.</p>
+
+<img src="/services/Nettoyage Hôtels.png" alt="Nettoyage professionnel hôtels et résidences Casablanca" style="width:100%;border-radius:12px;margin:24px 0;" />
+
+<h2>Les signaux d'alarme à éviter</h2>
+<ul>
+<li>Prix anormalement bas (souvent synonyme de travail bâclé ou de personnel non déclaré)</li>
+<li>Absence de devis écrit — tout accord verbal est risqué</li>
+<li>Aucune présence en ligne (pas de site, pas d'avis Google, pas de réseaux sociaux)</li>
+<li>Refus de fournir une attestation d'assurance</li>
+<li>Personnel qui change à chaque intervention sans explication</li>
+</ul>
+
+<h2>BOY NETTOYAGE PRO : votre partenaire nettoyage à Casablanca depuis 2016</h2>
+<p>Chez <strong>BOY NETTOYAGE PRO</strong>, nous répondons à tous ces critères : plus de 8 ans d'expérience, équipes formées et encadrées, produits certifiés, assurance RC professionnelle et devis gratuit détaillé sous 24h. Particuliers ou entreprises, nous intervenons dans toute la région de Casablanca. Contactez-nous pour un diagnostic gratuit.</p>`,
+  },
+
+  // ────────────────────────────────────────────────
+  // ARTICLE 7 — Nettoyage bureaux Casablanca : guide entreprises
+  // ────────────────────────────────────────────────
+  {
+    slug: "nettoyage-bureaux-casablanca-guide-entreprises",
+    title: "Nettoyage de Bureaux à Casablanca : Le Guide Complet pour les Entreprises",
+    metaTitle: "Nettoyage Bureaux Casablanca : Guide Entreprises 2026 | BOY NETTOYAGE PRO",
+    metaDescription:
+      "Comment organiser le nettoyage de vos bureaux à Casablanca ? Fréquence, prestations, coûts et conseils pour choisir le bon prestataire. Guide complet pour entreprises.",
+    publishedAt: "2026-04-05",
+    category: "professionnels",
+    readingTime: 7,
+    coverImage: "/services/Nettoyage Bureaux.png",
+    excerpt:
+      "La propreté de vos bureaux à Casablanca impacte directement la productivité de vos équipes et l'image de votre entreprise. Découvrez comment organiser efficacement le nettoyage de vos espaces de travail.",
+    tags: ["nettoyage bureaux casablanca", "entretien locaux professionnels", "société nettoyage maroc", "entreprise"],
+    relatedServices: ["nettoyage-bureaux", "nettoyage-residences-immeubles"],
+    content: `<p>Des bureaux propres, c'est bien plus qu'une question d'esthétique. Des études montrent qu'un espace de travail propre et ordonné augmente la productivité de 15 à 20 %, réduit l'absentéisme lié aux maladies et renforce l'image professionnelle auprès des clients et partenaires. À Casablanca, où le secteur des services est en pleine expansion, de plus en plus d'entreprises font appel à des prestataires spécialisés pour l'entretien de leurs locaux. Voici tout ce que vous devez savoir.</p>
+
+<img src="/services/Nettoyage Bureaux.png" alt="Nettoyage professionnel de bureaux à Casablanca" style="width:100%;border-radius:12px;margin:24px 0;" />
+
+<h2>Quelles prestations inclure dans votre contrat de nettoyage ?</h2>
+<p>Un contrat de nettoyage de bureaux professionnel à Casablanca couvre généralement plusieurs niveaux de prestations :</p>
+
+<h3>Nettoyage quotidien</h3>
+<ul>
+<li>Vidage des corbeilles et remplacement des sacs</li>
+<li>Nettoyage et désinfection des sanitaires et cuisinettes</li>
+<li>Dépoussiérage des bureaux, écrans et surfaces de travail</li>
+<li>Aspiration et lavage des sols</li>
+<li>Nettoyage des espaces de réception et salles de réunion</li>
+</ul>
+
+<h3>Nettoyage hebdomadaire</h3>
+<ul>
+<li>Nettoyage des vitres intérieures</li>
+<li>Dépoussiérage des meubles hauts et plinthes</li>
+<li>Désinfection approfondie des points de contact (poignées, interrupteurs, téléphones)</li>
+<li>Nettoyage des réfrigérateurs et micro-ondes</li>
+</ul>
+
+<h3>Nettoyage mensuel ou trimestriel</h3>
+<ul>
+<li>Nettoyage des vitres extérieures</li>
+<li>Shampouinage des moquettes et fauteuils de bureau</li>
+<li>Nettoyage en profondeur des climatiseurs</li>
+<li>Décapage et remise en cire des sols vinyle ou PVC</li>
+</ul>
+
+<img src="/services/Nettoyage centres commerciaux.png" alt="Entretien locaux professionnels et centres commerciaux Casablanca" style="width:100%;border-radius:12px;margin:24px 0;" />
+
+<h2>Quelle fréquence pour quel type de bureau ?</h2>
+<p>La fréquence d'intervention dépend principalement du trafic et de l'activité :</p>
+<ul>
+<li><strong>Open space + de 20 personnes</strong> : nettoyage quotidien indispensable</li>
+<li><strong>Bureau PME de 5 à 20 personnes</strong> : 3 à 5 fois par semaine</li>
+<li><strong>Cabinet ou bureau individuel</strong> : 2 à 3 fois par semaine</li>
+<li><strong>Salle de réunion à forte rotation</strong> : nettoyage après chaque utilisation recommandé</li>
+</ul>
+
+<h2>Combien coûte le nettoyage de bureaux à Casablanca ?</h2>
+<p>Les tarifs varient selon la superficie, la fréquence et les prestations incluses :</p>
+<ul>
+<li><strong>Petit bureau (jusqu'à 100 m²)</strong> : 800 à 1 500 MAD/mois pour 3 passages hebdomadaires</li>
+<li><strong>Bureau moyen (100 à 300 m²)</strong> : 1 500 à 3 500 MAD/mois</li>
+<li><strong>Grande surface (300 m² et plus)</strong> : sur devis, généralement calculé au m²</li>
+</ul>
+<p>Un contrat annuel permet souvent d'obtenir des tarifs réduits de 15 à 20 % par rapport à des interventions ponctuelles.</p>
+
+<h2>Intervention en dehors des heures de travail</h2>
+<p>La grande majorité des entreprises à Casablanca préfèrent que le nettoyage soit effectué <strong>avant l'ouverture</strong> (entre 6h et 8h) ou <strong>après la fermeture</strong> (après 18h), pour ne pas perturber les équipes. Assurez-vous que votre prestataire peut s'adapter à ces horaires et dispose d'un système de gestion des accès sécurisé.</p>
+
+<img src="/services/Nettoyage Industriel.png" alt="Nettoyage industriel et locaux professionnels Maroc" style="width:100%;border-radius:12px;margin:24px 0;" />
+
+<h2>5 questions à poser avant de signer un contrat</h2>
+<ol>
+<li>Quels produits utilisez-vous ? Sont-ils certifiés et adaptés à nos matériaux ?</li>
+<li>Comment gérez-vous la sécurité et la confidentialité de nos locaux ?</li>
+<li>Quel est votre processus de contrôle qualité ?</li>
+<li>Que se passe-t-il en cas d'absence d'un agent ? Avez-vous des remplaçants ?</li>
+<li>Pouvez-vous fournir une attestation d'assurance RC professionnelle ?</li>
+</ol>
+
+<h2>Pourquoi externaliser le nettoyage de vos bureaux ?</h2>
+<p>Externaliser le nettoyage à une société spécialisée présente plusieurs avantages pour les entreprises casablancaises :</p>
+<ul>
+<li><strong>Gain de temps</strong> : vous vous concentrez sur votre cœur de métier</li>
+<li><strong>Réduction des coûts</strong> : pas de charges sociales liées à un employé dédié</li>
+<li><strong>Qualité garantie</strong> : matériel professionnel et personnel formé</li>
+<li><strong>Flexibilité</strong> : ajustement des prestations selon les saisons ou les besoins</li>
+</ul>
+
+<p><strong>BOY NETTOYAGE PRO</strong> assure l'entretien de bureaux, open spaces, salles de réunion et espaces communs pour de nombreuses entreprises à Casablanca depuis 2016. Demandez votre devis gratuit et personnalisé sous 24h. ☎ +212 6 61 40 85 77</p>`,
+  },
+
+  // ────────────────────────────────────────────────
+  // ARTICLE 8 — Nettoyage de fin de chantier
+  // ────────────────────────────────────────────────
+  {
+    slug: "nettoyage-fin-chantier-casablanca-guide-complet",
+    title: "Nettoyage de Fin de Chantier à Casablanca : Tout Ce Qu'il Faut Savoir",
+    metaTitle: "Nettoyage Fin de Chantier Casablanca 2026 | BOY NETTOYAGE PRO",
+    metaDescription:
+      "Votre chantier est terminé à Casablanca ? Découvrez comment organiser le nettoyage de fin de chantier, les étapes clés, les tarifs et pourquoi faire appel à un professionnel.",
+    publishedAt: "2026-04-08",
+    category: "professionnels",
+    readingTime: 6,
+    coverImage: "/services/Nettoyage de chantier.png",
+    excerpt:
+      "La livraison d'un chantier passe obligatoirement par une étape souvent sous-estimée : le nettoyage. Poussière de ciment, résidus de peinture, vitres souillées... Voici comment bien organiser votre nettoyage de fin de chantier à Casablanca.",
+    tags: ["nettoyage fin de chantier", "nettoyage chantier casablanca", "remise en état", "construction"],
+    relatedServices: ["nettoyage-de-chantier"],
+    content: `<p>Un chantier terminé, c'est une belle réussite. Mais avant la livraison ou l'emménagement, une étape incontournable s'impose : le <strong>nettoyage de fin de chantier</strong>. Poussière de ciment incrustée partout, résidus de plâtre sur les sols, peinture séchée sur les vitres, copeaux de bois dans les coins... Le chantier laisse toujours derrière lui un niveau de salissures qui dépasse largement un nettoyage ordinaire. À Casablanca, de nombreux promoteurs immobiliers, entrepreneurs et particuliers font appel à BOY NETTOYAGE PRO pour ce travail de remise en état.</p>
+
+<img src="/services/Nettoyage de chantier.png" alt="Nettoyage fin de chantier professionnel à Casablanca" style="width:100%;border-radius:12px;margin:24px 0;" />
+
+<h2>Pourquoi le nettoyage de chantier est différent d'un nettoyage classique ?</h2>
+<p>Les salissures de chantier ont des caractéristiques spécifiques qui nécessitent des techniques et du matériel adaptés :</p>
+<ul>
+<li><strong>Poussière de ciment et plâtre</strong> : extrêmement fine, elle se dépose partout — y compris dans les canalisations, les ventilations et les interstices des fenêtres. Un aspirateur domestique ne suffit pas.</li>
+<li><strong>Résidus de peinture</strong> : selon leur nature (glycérophtalique, acrylique, époxy), ils nécessitent des solvants spécifiques pour être éliminés sans abîmer les surfaces.</li>
+<li><strong>Ciment et colle sur les sols</strong> : les projections de mortier, de carrelage ou de colle nécessitent un décapage mécanique ou chimique.</li>
+<li><strong>Vitres souillées</strong> : les protections autocollantes et la poussière incrustée demandent des techniques de vitrerie professionnelle.</li>
+</ul>
+
+<h2>Les étapes d'un nettoyage de fin de chantier professionnel</h2>
+
+<h3>Étape 1 : Dépoussiérage structurel</h3>
+<p>Avant tout lavage, il faut éliminer toute la poussière sèche : plafonds, murs, boiseries, rebords de fenêtres, interrupteurs, prises. Un aspirateur industriel à haute capacité est indispensable à cette étape pour ne pas simplement redistribuer la poussière dans l'air.</p>
+
+<img src="/services/Nettoyage résidences, immeubles.png" alt="Remise en état appartement et résidence après chantier Casablanca" style="width:100%;border-radius:12px;margin:24px 0;" />
+
+<h3>Étape 2 : Nettoyage des sols</h3>
+<p>C'est souvent l'étape la plus longue. Elle comprend :</p>
+<ul>
+<li>Élimination des résidus solides (mortier, colle, plâtre) par grattage ou décapage chimique adapté</li>
+<li>Lavage complet des sols avec détergents professionnels appropriés au matériau (carrelage, marbre, béton, parquet)</li>
+<li>Protection des sols neufs si nécessaire</li>
+</ul>
+
+<h3>Étape 3 : Nettoyage des vitres et menuiseries</h3>
+<p>Les vitres sont souvent couvertes de peinture, de ciment et de résidus d'autocollants protecteurs. Nos équipes utilisent des raclettes professionnelles et des produits de vitrerie pour restituer une transparence parfaite sans rayer le verre.</p>
+
+<h3>Étape 4 : Sanitaires et équipements</h3>
+<p>Robinets, baignoires, douches, WC, éviers de cuisine : tous les équipements installés doivent être détartrés, désinfectés et polis. Les traces de ciment dans les joints sont éliminées à l'aide de produits spécifiques.</p>
+
+<h3>Étape 5 : Contrôle qualité et livraison</h3>
+<p>Avant de vous remettre les clés, notre chef d'équipe effectue un tour complet du chantier pour vérifier que rien n'a été oublié. Nous vous remettons un rapport d'intervention détaillant les prestations effectuées.</p>
+
+<h2>Tarifs du nettoyage de chantier à Casablanca</h2>
+<ul>
+<li><strong>Appartement T2/T3 (60 à 90 m²)</strong> : 800 à 1 500 MAD</li>
+<li><strong>Appartement T4/T5 (100 à 140 m²)</strong> : 1 500 à 2 500 MAD</li>
+<li><strong>Villa (200 m² et plus)</strong> : à partir de 3 000 MAD selon la superficie</li>
+<li><strong>Local commercial ou bureaux</strong> : sur devis, généralement 15 à 25 MAD/m²</li>
+</ul>
+<p>Ces tarifs comprennent la main-d'œuvre, les produits et le matériel. Le prix final dépend de l'état du chantier, du type de finitions et des surfaces spécifiques à traiter.</p>
+
+<h2>Quel délai prévoir ?</h2>
+<p>Pour un appartement standard, comptez une journée d'intervention (6 à 8 heures) avec une équipe de 2 à 3 personnes. Pour une villa ou un local commercial, prévoyez 2 à 3 jours. Nous recommandons de planifier l'intervention <strong>48 à 72 heures avant la livraison</strong> pour disposer d'un peu de marge.</p>
+
+<p><strong>BOY NETTOYAGE PRO</strong> intervient sur les chantiers de toute la région de Casablanca, 7j/7. Envoyez-nous des photos de votre chantier par WhatsApp au <strong>+212 6 61 40 85 77</strong> et recevez un devis précis sous quelques heures.</p>`,
+  },
+
 ];
 
 export function getBlogPostBySlug(slug: string): BlogPost | undefined {
