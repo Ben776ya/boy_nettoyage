@@ -22,18 +22,34 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   if (!service) return {};
 
   const hasLocation = /casablanca|maroc/i.test(service.title);
-  const title = hasLocation ? service.title : `${service.title} à Casablanca`;
-  const description = `BOY NETTOYAGE PRO assure le ${service.title.toLowerCase()} professionnel à Casablanca et partout au Maroc. Équipe qualifiée, produits certifiés, devis gratuit sous 24h.`;
+  const titleBase = hasLocation ? service.title : `${service.title} à Casablanca`;
+  const title = `${titleBase} | BOY NETTOYAGE PRO — Devis Gratuit`;
+  const description = `BOY NETTOYAGE PRO, société de nettoyage professionnelle à Casablanca. ${service.description} Équipe qualifiée, produits certifiés, devis gratuit sous 24h. ☎ +212 6 61 40 85 77`;
+  const ogTitle = hasLocation ? `${service.title} | BOY NETTOYAGE PRO` : `${service.title} à Casablanca | BOY NETTOYAGE PRO`;
 
   return {
     title,
     description,
+    keywords: [
+      `${service.title.toLowerCase()} casablanca`,
+      `société de nettoyage casablanca`,
+      `nettoyage professionnel maroc`,
+      slug.replace(/-/g, " "),
+    ],
     alternates: {
       canonical: `/services/${slug}`,
     },
     openGraph: {
-      title: hasLocation ? `${service.title} | BOY NETTOYAGE PRO` : `${service.title} à Casablanca | BOY NETTOYAGE PRO`,
+      title: ogTitle,
       description,
+      images: [
+        {
+          url: service.image ?? "/logo.png",
+          width: 1200,
+          height: 630,
+          alt: ogTitle,
+        },
+      ],
     },
   };
 }

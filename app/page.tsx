@@ -2,16 +2,33 @@ import type { Metadata } from "next";
 import HeroSection from "@/components/HeroSection";
 
 export const metadata: Metadata = {
-  title: "Nettoyage Professionnel à Casablanca",
+  title: "Société de Nettoyage Casablanca | BOY NETTOYAGE PRO — Devis Gratuit",
   description:
-    "BOY NETTOYAGE PRO — Entreprise de nettoyage professionnel à Casablanca depuis 2016. Villas, bureaux, industrie, dératisation, cristallisation marbre. Devis gratuit 24h/24.",
+    "BOY NETTOYAGE PRO, société de nettoyage à Casablanca depuis 2016. Nettoyage villas, bureaux, industrie, dératisation, cristallisation marbre. Intervention 24h/24 au Maroc. ☎ +212 6 61 40 85 77",
+  keywords: [
+    "société de nettoyage casablanca",
+    "société de nettoyage maroc",
+    "entreprise nettoyage casablanca",
+    "nettoyage professionnel casablanca",
+    "nettoyage bureaux casablanca",
+    "nettoyage villas casablanca",
+    "dératisation casablanca",
+  ],
   alternates: {
     canonical: "/",
   },
   openGraph: {
-    title: "Nettoyage Professionnel à Casablanca | BOY NETTOYAGE PRO",
+    title: "Société de Nettoyage Casablanca | BOY NETTOYAGE PRO",
     description:
-      "BOY NETTOYAGE PRO — Entreprise de nettoyage professionnel à Casablanca depuis 2016. Villas, bureaux, industrie, dératisation, cristallisation marbre. Devis gratuit 24h/24.",
+      "Société de nettoyage professionnel à Casablanca depuis 2016. Villas, bureaux, industrie, dératisation, cristallisation marbre. Devis gratuit 24h/24.",
+    images: [
+      {
+        url: "/logo.png",
+        width: 1200,
+        height: 630,
+        alt: "BOY NETTOYAGE PRO — Société de Nettoyage Casablanca",
+      },
+    ],
   },
 };
 

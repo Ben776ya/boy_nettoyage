@@ -7,14 +7,23 @@ const BASE_URL = "https://www.boynettoyage.ma";
 const city = getCityBySlug("nettoyage-marrakech")!;
 
 export const metadata: Metadata = {
-  title: `Nettoyage Professionnel à ${city.city} | BOY NETTOYAGE PRO`,
-  description: `BOY NETTOYAGE PRO — Service de nettoyage professionnel à ${city.city}. Appartements, villas, bureaux, dératisation. Équipe qualifiée, devis gratuit sous 24h. ☎ +212 6 61 40 85 77`,
+  title: `Société de Nettoyage ${city.city} — BOY NETTOYAGE PRO | Devis Gratuit`,
+  description: `BOY NETTOYAGE PRO, société de nettoyage professionnelle à ${city.city}. Riads, villas, hôtels, bureaux, dératisation. Équipe qualifiée, devis gratuit sous 24h. ☎ +212 6 61 40 85 77`,
+  keywords: [
+    `société de nettoyage ${city.city.toLowerCase()}`,
+    `entreprise nettoyage ${city.city.toLowerCase()}`,
+    `nettoyage professionnel ${city.city.toLowerCase()}`,
+    `nettoyage hôtels ${city.city.toLowerCase()}`,
+    `nettoyage riad ${city.city.toLowerCase()}`,
+    "société de nettoyage maroc",
+  ],
   alternates: {
     canonical: `/${city.slug}`,
   },
   openGraph: {
-    title: `Nettoyage Professionnel à ${city.city} | BOY NETTOYAGE PRO`,
-    description: `Service de nettoyage professionnel à ${city.city}. Appartements, villas, bureaux, dératisation. Devis gratuit sous 24h.`,
+    title: `Société de Nettoyage ${city.city} | BOY NETTOYAGE PRO`,
+    description: `Société de nettoyage professionnel à ${city.city}. Riads, villas, hôtels, bureaux, dératisation. Devis gratuit sous 24h.`,
+    images: [{ url: "/logo.png", width: 1200, height: 630, alt: `BOY NETTOYAGE PRO — Société de Nettoyage ${city.city}` }],
   },
 };
 
