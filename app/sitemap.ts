@@ -5,19 +5,30 @@ import { BLOG_POSTS } from "@/lib/blog-data";
 
 const BASE_URL = "https://www.boynettoyage.ma";
 
+// Services prioritaires SEO - keywords: société de nettoyage casablanca / maroc
+const HIGH_PRIORITY_SERVICES = [
+  "nettoyage-appartements-villas",
+  "nettoyage-bureaux",
+  "nettoyage-industriel",
+  "nettoyage-de-chantier",
+  "hygiene-traitement-4d",
+  "cristallisation-marbre",
+];
+
 export default function sitemap(): MetadataRoute.Sitemap {
   const serviceUrls = SERVICES_DETAIL.map((service) => ({
     url: `${BASE_URL}/services/${service.slug}`,
     lastModified: new Date(),
     changeFrequency: "monthly" as const,
-    priority: 0.8,
+    priority: HIGH_PRIORITY_SERVICES.includes(service.slug) ? 0.9 : 0.8,
   }));
 
   const cityUrls = CITY_PAGES.map((city) => ({
     url: `${BASE_URL}/${city.slug}`,
     lastModified: new Date(),
     changeFrequency: "monthly" as const,
-    priority: city.slug === "nettoyage-casablanca" ? 0.9 : 0.8,
+    // Casablanca = priorité max car keyword principal
+    priority: city.slug === "nettoyage-casablanca" ? 0.95 : 0.85,
   }));
 
   const blogUrls = BLOG_POSTS.map((post) => ({
@@ -28,17 +39,21 @@ export default function sitemap(): MetadataRoute.Sitemap {
   }));
 
   return [
+    // ===== PAGE D'ACCUEIL =====
+    // Keyword: société de nettoyage casablanca | société de nettoyage maroc
     {
       url: BASE_URL,
       lastModified: new Date(),
       changeFrequency: "weekly",
       priority: 1.0,
     },
+
+    // ===== PAGES PRINCIPALES =====
     {
       url: `${BASE_URL}/services`,
       lastModified: new Date(),
       changeFrequency: "weekly",
-      priority: 0.9,
+      priority: 0.95,
     },
     {
       url: `${BASE_URL}/blog`,
@@ -50,10 +65,17 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: `${BASE_URL}/qui-sommes-nous`,
       lastModified: new Date(),
       changeFrequency: "monthly",
-      priority: 0.7,
+      priority: 0.65,
     },
+
+    // ===== SERVICES (dynamique depuis SERVICES_DETAIL) =====
     ...serviceUrls,
+
+    // ===== PAGES VILLES (dynamique depuis CITY_PAGES) =====
+    // Keywords: nettoyage casablanca | nettoyage rabat | nettoyage marrakech | nettoyage agadir
     ...cityUrls,
+
+    // ===== BLOG (dynamique depuis BLOG_POSTS) =====
     ...blogUrls,
   ];
 }
