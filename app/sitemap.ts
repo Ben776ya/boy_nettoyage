@@ -2,6 +2,7 @@ import { MetadataRoute } from "next";
 import { SERVICES_DETAIL } from "@/lib/services-detail-data";
 import { CITY_PAGES } from "@/lib/city-data";
 import { BLOG_POSTS } from "@/lib/blog-data";
+import { QUARTIERS } from "@/lib/quartiers-data";
 
 const BASE_URL = "https://www.boynettoyage.ma";
 
@@ -36,6 +37,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     lastModified: new Date(post.updatedAt ?? post.publishedAt),
     changeFrequency: "weekly" as const,
     priority: 0.7,
+  }));
+
+  // Pages quartiers Casablanca - keywords: société de nettoyage [quartier] casablanca
+  const quartierUrls = QUARTIERS.map((q) => ({
+    url: `${BASE_URL}/nettoyage-casablanca/${q.slug}`,
+    lastModified: new Date(),
+    changeFrequency: "monthly" as const,
+    priority: 0.85,
   }));
 
   return [
@@ -74,6 +83,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // ===== PAGES VILLES (dynamique depuis CITY_PAGES) =====
     // Keywords: nettoyage casablanca | nettoyage rabat | nettoyage marrakech | nettoyage agadir
     ...cityUrls,
+
+    // ===== QUARTIERS CASABLANCA =====
+    // Keywords: société de nettoyage maarif | anfa | ain-diab | racine | gauthier...
+    ...quartierUrls,
 
     // ===== BLOG (dynamique depuis BLOG_POSTS) =====
     ...blogUrls,
