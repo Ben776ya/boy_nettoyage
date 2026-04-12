@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import { Clock, Calendar, ArrowRight } from "lucide-react";
 import {
@@ -108,15 +109,27 @@ export default function BlogListingContent() {
                   className="group bg-white rounded-2xl shadow-sm border border-border hover:shadow-xl transition-all duration-400 overflow-hidden hover:-translate-y-1"
                 >
                   <Link href={`/blog/${post.slug}`} className="block">
-                    {/* Card Image / Placeholder */}
-                    <div className="relative h-48 bg-gradient-to-br from-primary-teal/10 to-bright-blue/10 flex items-center justify-center overflow-hidden">
-                      <div className="text-6xl opacity-20 group-hover:scale-110 transition-transform duration-500">
-                        {post.category === "conseils-nettoyage" && "\u2728"}
-                        {post.category === "guide-hygiene" && "\ud83e\uddf9"}
-                        {post.category === "actualites" && "\ud83d\udcf0"}
-                        {post.category === "avant-apres" && "\ud83d\udcf7"}
-                        {post.category === "professionnels" && "\ud83c\udfe2"}
-                      </div>
+                    {/* Card Image */}
+                    <div className="relative h-48 bg-gradient-to-br from-primary-teal/10 to-bright-blue/10 overflow-hidden">
+                      {post.coverImage ? (
+                        <Image
+                          src={post.coverImage}
+                          alt={post.title}
+                          fill
+                          className="object-cover group-hover:scale-105 transition-transform duration-500"
+                          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                        />
+                      ) : (
+                        <div className="w-full h-full flex items-center justify-center">
+                          <div className="text-6xl opacity-20 group-hover:scale-110 transition-transform duration-500">
+                            {post.category === "conseils-nettoyage" && "✨"}
+                            {post.category === "guide-hygiene" && "🧹"}
+                            {post.category === "actualites" && "📰"}
+                            {post.category === "avant-apres" && "📷"}
+                            {post.category === "professionnels" && "🏢"}
+                          </div>
+                        </div>
+                      )}
                       {/* Category badge */}
                       <span
                         className={cn(

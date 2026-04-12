@@ -33,6 +33,7 @@ export const metadata: Metadata = {
 };
 
 import Link from "next/link";
+import Image from "next/image";
 import { ArrowRight, Clock } from "lucide-react";
 import TrustBar from "@/components/TrustBar";
 import DevisForm from "@/components/DevisForm";
@@ -77,16 +78,30 @@ export default function Home() {
                   href={`/blog/${post.slug}`}
                   className="group bg-white rounded-2xl border border-border shadow-sm hover:shadow-lg transition-all duration-300 overflow-hidden hover:-translate-y-1"
                 >
-                  <div className="p-6">
+                  {/* Cover image */}
+                  <div className="relative h-44 bg-gradient-to-br from-primary-teal/10 to-bright-blue/10 overflow-hidden">
+                    {post.coverImage ? (
+                      <Image
+                        src={post.coverImage}
+                        alt={post.title}
+                        fill
+                        className="object-cover group-hover:scale-105 transition-transform duration-500"
+                        sizes="(max-width: 768px) 100vw, 33vw"
+                      />
+                    ) : (
+                      <div className="w-full h-full flex items-center justify-center text-5xl opacity-20">✨</div>
+                    )}
                     <span
                       className={cn(
-                        "inline-block px-2.5 py-0.5 rounded-full text-xs font-semibold mb-3",
+                        "absolute top-3 left-3 px-2.5 py-0.5 rounded-full text-xs font-semibold",
                         colors.bg,
                         colors.text
                       )}
                     >
                       {BLOG_CATEGORIES[post.category]}
                     </span>
+                  </div>
+                  <div className="p-6">
                     <h3 className="text-base font-bold text-primary-navy mb-2 group-hover:text-primary-teal transition-colors line-clamp-2">
                       {post.title}
                     </h3>
