@@ -50,11 +50,12 @@ export const BLOG_POSTS: BlogPost[] = [
     publishedAt: "2026-03-10",
     category: "conseils-nettoyage",
     readingTime: 5,
+    coverImage: "/services/Nettoyage appartements.png",
     excerpt:
       "Vous souhaitez faire nettoyer votre appartement \u00e0 Casablanca mais ne savez pas quel budget pr\u00e9voir ? D\u00e9couvrez les tarifs moyens pratiqu\u00e9s en 2026, les facteurs qui influencent le prix et nos conseils pour comparer les devis intelligemment.",
     tags: ["prix nettoyage", "tarifs", "Casablanca", "appartement"],
     relatedServices: ["nettoyage-appartements-villas"],
-    content: `<p>Faire nettoyer son appartement par une \u00e9quipe professionnelle est devenu un r\u00e9flexe pour de nombreux Casablancais. Que ce soit pour un grand m\u00e9nage ponctuel, un nettoyage avant un d\u00e9m\u00e9nagement ou un entretien r\u00e9gulier, la premi\u00e8re question qui revient est toujours la m\u00eame : <strong>combien \u00e7a co\u00fbte ?</strong> Les tarifs varient consid\u00e9rablement d\u2019un prestataire \u00e0 l\u2019autre, et il est parfois difficile de savoir si le prix propos\u00e9 est juste. Ce guide vous donne toutes les cl\u00e9s pour y voir clair en 2026.</p>
+    content: `<img src="/services/Nettoyage appartements.png" alt="Nettoyage appartement professionnel à Casablanca" style="width:100%;border-radius:12px;margin:0 0 24px 0;" /><p>Faire nettoyer son appartement par une \u00e9quipe professionnelle est devenu un r\u00e9flexe pour de nombreux Casablancais. Que ce soit pour un grand m\u00e9nage ponctuel, un nettoyage avant un d\u00e9m\u00e9nagement ou un entretien r\u00e9gulier, la premi\u00e8re question qui revient est toujours la m\u00eame : <strong>combien \u00e7a co\u00fbte ?</strong> Les tarifs varient consid\u00e9rablement d\u2019un prestataire \u00e0 l\u2019autre, et il est parfois difficile de savoir si le prix propos\u00e9 est juste. Ce guide vous donne toutes les cl\u00e9s pour y voir clair en 2026.</p>
 
 <h2>Tarifs moyens par type de logement</h2>
 <p>Les prix ci-dessous correspondent \u00e0 un nettoyage complet standard (sols, surfaces, sanitaires, cuisine, d\u00e9poussi\u00e9rage) r\u00e9alis\u00e9 par une \u00e9quipe professionnelle \u00e0 Casablanca. Ils incluent la main-d\u2019\u0153uvre et les produits.</p>
@@ -118,11 +119,12 @@ export const BLOG_POSTS: BlogPost[] = [
     publishedAt: "2026-03-17",
     category: "conseils-nettoyage",
     readingTime: 6,
+    coverImage: "/services/Nettoyage Canapé & Fauteuil.png",
     excerpt:
       "Tache de caf\u00e9, de vin rouge ou de graisse sur votre canap\u00e9 en tissu ? Pas de panique. Ce guide vous d\u00e9taille les m\u00e9thodes professionnelles adapt\u00e9es \u00e0 chaque type de tache, les erreurs \u00e0 \u00e9viter et les gestes d\u2019entretien au quotidien.",
     tags: ["nettoyage canap\u00e9", "taches", "tissu", "guide pratique"],
     relatedServices: ["nettoyage-canape-fauteuil"],
-    content: `<p>Le canap\u00e9 est sans doute le meuble le plus sollicit\u00e9 de la maison. On s\u2019y installe pour manger, travailler, jouer avec les enfants\u2026 et in\u00e9vitablement, les taches finissent par s\u2019y inviter. Caf\u00e9 renvers\u00e9, sauce tomate, traces de stylo ou auréoles de transpiration : chaque tache a sa m\u00e9thode de traitement. Voici le guide complet pour redonner une seconde vie \u00e0 votre canap\u00e9 en tissu, sans l\u2019ab\u00eemer.</p>
+    content: `<img src="/services/Nettoyage Canapé & Fauteuil.png" alt="Nettoyage canapé et fauteuil professionnel Casablanca" style="width:100%;border-radius:12px;margin:0 0 24px 0;" /><p>Le canap\u00e9 est sans doute le meuble le plus sollicit\u00e9 de la maison. On s\u2019y installe pour manger, travailler, jouer avec les enfants\u2026 et in\u00e9vitablement, les taches finissent par s\u2019y inviter. Caf\u00e9 renvers\u00e9, sauce tomate, traces de stylo ou auréoles de transpiration : chaque tache a sa m\u00e9thode de traitement. Voici le guide complet pour redonner une seconde vie \u00e0 votre canap\u00e9 en tissu, sans l\u2019ab\u00eemer.</p>
 
 <h2>Premi\u00e8re \u00e9tape : identifier le type de tissu</h2>
 <p>Avant d\u2019appliquer quoi que ce soit, retournez le coussin ou soulevez la jupe de votre canap\u00e9 pour trouver l\u2019\u00e9tiquette d\u2019entretien. Elle comporte g\u00e9n\u00e9ralement une lettre qui d\u00e9termine les produits compatibles :</p>
@@ -186,11 +188,12 @@ export const BLOG_POSTS: BlogPost[] = [
     publishedAt: "2026-03-24",
     category: "guide-hygiene",
     readingTime: 7,
+    coverImage: "/services/Dératisation.png",
     excerpt:
       "Bruits suspects la nuit, emballages grignotés, excréments dans le placard ? Les rongeurs sont un probl\u00e8me courant \u00e0 Casablanca. Ce guide vous aide \u00e0 reconna\u00eetre les signes, r\u00e9agir efficacement et prot\u00e9ger durablement votre logement.",
     tags: ["d\u00e9ratisation", "rongeurs", "Casablanca", "nuisibles"],
     relatedServices: ["deratisation", "hygiene-traitement-4d"],
-    content: `<p>Casablanca, comme toutes les grandes m\u00e9tropoles, est confront\u00e9e \u00e0 la pr\u00e9sence de rongeurs. Rats bruns, rats noirs et souris domestiques trouvent dans le tissu urbain dense de la ville un habitat id\u00e9al : nourriture accessible, abris nombreux et temp\u00e9ratures cl\u00e9mentes toute l\u2019ann\u00e9e. D\u00e9tecter une infestation t\u00f4t et r\u00e9agir rapidement est essentiel pour prot\u00e9ger votre sant\u00e9, votre logement et vos biens.</p>
+    content: `<img src="/services/Dératisation.png" alt="Dératisation professionnelle à Casablanca" style="width:100%;border-radius:12px;margin:0 0 24px 0;" /><p>Casablanca, comme toutes les grandes m\u00e9tropoles, est confront\u00e9e \u00e0 la pr\u00e9sence de rongeurs. Rats bruns, rats noirs et souris domestiques trouvent dans le tissu urbain dense de la ville un habitat id\u00e9al : nourriture accessible, abris nombreux et temp\u00e9ratures cl\u00e9mentes toute l\u2019ann\u00e9e. D\u00e9tecter une infestation t\u00f4t et r\u00e9agir rapidement est essentiel pour prot\u00e9ger votre sant\u00e9, votre logement et vos biens.</p>
 
 <h2>7 signes qui r\u00e9v\u00e8lent la pr\u00e9sence de rongeurs</h2>
 <p>Les rongeurs sont nocturnes et discrets. Vous les verrez rarement en plein jour, sauf en cas d\u2019infestation avanc\u00e9e. Apprenez \u00e0 reconna\u00eetre leurs traces :</p>
@@ -255,11 +258,12 @@ export const BLOG_POSTS: BlogPost[] = [
     publishedAt: "2026-04-01",
     category: "professionnels",
     readingTime: 6,
+    coverImage: "/services/Nettoyage de chantier.png",
     excerpt:
       "Un chantier livr\u00e9 sans nettoyage professionnel, c\u2019est une mauvaise premi\u00e8re impression garantie. D\u00e9couvrez notre checklist en 5 phases pour un r\u00e9sultat impeccable, du d\u00e9poussi\u00e9rage aux finitions.",
     tags: ["nettoyage chantier", "fin de chantier", "checklist", "promoteur"],
     relatedServices: ["nettoyage-de-chantier"],
-    content: `<p>Que vous soyez promoteur immobilier, entrepreneur en b\u00e2timent ou particulier qui vient de r\u00e9nover son appartement, le nettoyage de fin de chantier est la <strong>derni\u00e8re \u00e9tape avant la livraison</strong> \u2014 et probablement la plus visible. Un espace livr\u00e9 couvert de poussi\u00e8re de pl\u00e2tre et de traces de ciment, m\u00eame parfaitement construit, laisse une impression n\u00e9gative durable. \u00c0 l\u2019inverse, un local impeccable valorise imm\u00e9diatement la qualit\u00e9 des travaux r\u00e9alis\u00e9s.</p>
+    content: `<img src="/services/Nettoyage de chantier.png" alt="Nettoyage fin de chantier professionnel Casablanca" style="width:100%;border-radius:12px;margin:0 0 24px 0;" /><p>Que vous soyez promoteur immobilier, entrepreneur en b\u00e2timent ou particulier qui vient de r\u00e9nover son appartement, le nettoyage de fin de chantier est la <strong>derni\u00e8re \u00e9tape avant la livraison</strong> \u2014 et probablement la plus visible. Un espace livr\u00e9 couvert de poussi\u00e8re de pl\u00e2tre et de traces de ciment, m\u00eame parfaitement construit, laisse une impression n\u00e9gative durable. \u00c0 l\u2019inverse, un local impeccable valorise imm\u00e9diatement la qualit\u00e9 des travaux r\u00e9alis\u00e9s.</p>
 
 <h2>Pourquoi le nettoyage post-chantier est une \u00e9tape critique</h2>
 <p>La poussi\u00e8re de chantier n\u2019est pas de la poussi\u00e8re ordinaire. Compos\u00e9e de particules de pl\u00e2tre, de ciment, de bois et parfois d\u2019isolant, elle est extr\u00eamement fine et abrasive. Si elle n\u2019est pas \u00e9limin\u00e9e correctement, elle peut rayer les sols, encrasser la climatisation, ternir les menuiseries et m\u00eame provoquer des probl\u00e8mes respiratoires chez les futurs occupants. Pour les promoteurs, un nettoyage b\u00e2cl\u00e9 est aussi la premi\u00e8re source de r\u00e9clamations lors de la remise des cl\u00e9s.</p>
@@ -339,11 +343,12 @@ export const BLOG_POSTS: BlogPost[] = [
     publishedAt: "2026-04-07",
     category: "avant-apres",
     readingTime: 5,
+    coverImage: "/services/Cristallisation du Marbre.jpg",
     excerpt:
       "Un sol en marbre terne, ray\u00e9 ou tach\u00e9 peut retrouver une brillance miroir gr\u00e2ce \u00e0 la cristallisation professionnelle. D\u00e9couvrez le processus \u00e9tape par \u00e9tape, les r\u00e9sultats attendus et les tarifs pratiqu\u00e9s \u00e0 Casablanca en 2026.",
     tags: ["cristallisation marbre", "polissage", "marbre", "sol"],
     relatedServices: ["cristallisation-marbre", "cristallisation-parquet"],
-    content: `<p>Le marbre est l\u2019un des mat\u00e9riaux les plus nobles et les plus r\u00e9pandus dans les habitations marocaines. Halls d\u2019entr\u00e9e, salons, escaliers, salles de bain : il apporte une \u00e9l\u00e9gance naturelle \u00e0 chaque pi\u00e8ce. Mais c\u2019est aussi une pierre tendre et poreuse qui, sans entretien adapt\u00e9, perd progressivement son \u00e9clat. Rayures de passage, taches d\u2019acidit\u00e9 (citron, vinaigre), voile blanchal\u00e2tre\u2026 Les signes d\u2019usure apparaissent in\u00e9vitablement avec le temps. La <strong>cristallisation</strong> est la solution professionnelle pour redonner au marbre sa brillance d\u2019origine, sans le remplacer.</p>
+    content: `<img src="/services/Cristallisation du Marbre.jpg" alt="Cristallisation du marbre professionnel à Casablanca" style="width:100%;border-radius:12px;margin:0 0 24px 0;" /><p>Le marbre est l\u2019un des mat\u00e9riaux les plus nobles et les plus r\u00e9pandus dans les habitations marocaines. Halls d\u2019entr\u00e9e, salons, escaliers, salles de bain : il apporte une \u00e9l\u00e9gance naturelle \u00e0 chaque pi\u00e8ce. Mais c\u2019est aussi une pierre tendre et poreuse qui, sans entretien adapt\u00e9, perd progressivement son \u00e9clat. Rayures de passage, taches d\u2019acidit\u00e9 (citron, vinaigre), voile blanchal\u00e2tre\u2026 Les signes d\u2019usure apparaissent in\u00e9vitablement avec le temps. La <strong>cristallisation</strong> est la solution professionnelle pour redonner au marbre sa brillance d\u2019origine, sans le remplacer.</p>
 
 <h2>Qu\u2019est-ce que la cristallisation exactement ?</h2>
 <p>La cristallisation est un proc\u00e9d\u00e9 chimico-m\u00e9canique qui transforme la couche superficielle du marbre en une surface dure et brillante. Concr\u00e8tement, un produit cristallisant (g\u00e9n\u00e9ralement \u00e0 base d\u2019acide oxalique ou de fluorosilicate) est appliqu\u00e9 sur le marbre, puis travaill\u00e9 \u00e0 l\u2019aide d\u2019une monobrosse \u00e9quip\u00e9e d\u2019un pad en laine d\u2019acier. La friction et la chaleur g\u00e9n\u00e9r\u00e9es d\u00e9clenchent une r\u00e9action chimique avec le carbonate de calcium pr\u00e9sent dans le marbre, formant une couche vitrifi\u00e9e naturelle \u00e0 la surface de la pierre.</p>
