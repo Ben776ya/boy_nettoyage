@@ -27,11 +27,18 @@ export const metadata: Metadata = {
   description:
     "Services de nettoyage professionnel à Casablanca depuis 2016. Villas, bureaux, hôtels, dératisation, cristallisation marbre. Devis gratuit sous 24h.",
   keywords: [
+    "société de nettoyage casablanca",
+    "société de nettoyage maroc",
     "nettoyage professionnel Casablanca",
+    "entreprise nettoyage Casablanca",
     "nettoyage appartement Casablanca",
     "nettoyage bureaux Casablanca",
+    "nettoyage industriel Casablanca",
+    "nettoyage fin de chantier Casablanca",
     "dératisation Casablanca",
     "cristallisation marbre Casablanca",
+    "nettoyage villa Casablanca",
+    "prestataire nettoyage Maroc",
   ],
   authors: [{ name: "BOY NETTOYAGE PRO" }],
   creator: "BOY NETTOYAGE PRO",
