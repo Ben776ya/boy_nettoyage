@@ -83,7 +83,10 @@ export async function POST(request: NextRequest) {
           status: "",
         });
 
-      if (error) throw error;
+  //    if (error) throw error;
+  if (error) {
+  console.error("Supabase error:", error);
+}
 
       const { error: emailError } = await resend.emails.send({
         from: "BOY Nettoyage <devis@boynettoyage.ma>",
@@ -149,7 +152,10 @@ ${data.message || "Aucun message"}
           status: "",
         });
 
-      if (error) throw error;
+  //    if (error) throw error;
+  if (error) {
+  console.error("Supabase error:", error);
+}
 
       const { error: emailError } = await resend.emails.send({
         from: "BOY Nettoyage <devis@boynettoyage.ma>",
